@@ -1,7 +1,9 @@
 Resume
 ======
 
-My personal resume, and its accompanying LaTeX source.
+The LaTeX source for my personal Resume.
+
+[![See here for the PDF version.](https://www.sharelatex.com/github/repos/g-liu/resume/builds/latest/badge.svg)](https://www.sharelatex.com/github/repos/g-liu/resume/builds/latest/output.pdf). The resume in the root directory of this repo **may or may not be outdated.**
 
 ## Notes
 
