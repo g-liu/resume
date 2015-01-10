@@ -145,6 +145,31 @@ table .job-description p:last-child {
 	margin-bottom: 0;
 }
 
+#previous-work {
+	color: #555;
+	font-style: italic;
+}
+#previous-work strong {
+	font-weight: 600;
+}
+#previous-work p {
+	display: inline;
+}
+#previous-work ul {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#previous-work li {
+	display: inline;
+}
+#previous-work li:not(:last-child):after {
+	content: " •";
+	color: #555;
+	padding: 0 .5em;
+}
+
 
 section.project {
 	-webkit-box-sizing: border-box;
