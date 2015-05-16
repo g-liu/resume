@@ -9,7 +9,7 @@ html, body {
 
 header {
 	background-color: #3a3a3a;
-	padding: 0.75in 0.5in 0.1875in;
+	padding: 0.666in 0.5in 0.1875in;
 }
 
 header h1,
@@ -62,14 +62,11 @@ ul.bulleted {
 	abbr, abbr[title] {
 		border-bottom: none;
 	}
-	footer {
-		display: none;
-	}
 }
 
 #main {
 	overflow: hidden;
-	padding: 0.333in 0.5in;
+	padding: 0.333in 0.5in 0.1666in;
 }
 #main:before,
 #main:after {
