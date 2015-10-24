@@ -43,7 +43,9 @@ aside h3 {
 }
 
 h4 {
-	font-size: 15px;
+	font-size: 14px;
+	margin: 0 0 0.333em;
+	line-height: 100%;
 }
 
 p, ul, span, code, tt, kbd, td {
@@ -111,7 +113,6 @@ table .years .months {
 }
 table .job-title {
 	width: 75%;
-	font-size: 13px;
 	font-weight: bold;
 }
 table .employer {
@@ -125,7 +126,7 @@ table .type {
 }
 table .job-description {
 	padding-top: 0.33em;
-	padding-bottom: 0.5em
+	padding-bottom: 0.5em;;
 }
 table .job-description p:first-child {
 	margin-top: 0;
@@ -140,6 +141,18 @@ table tr.previous {
 
 table tr.previous .job-title:after {
 	content: ",\00a0";
+}
+
+table tr.previous td {
+	padding: 0.25em 0;
+}
+
+table tr.previous h4 {
+	display: inline; /* want run-in but not supported */
+}
+
+table td {
+	vertical-align: top;
 }
 
 /*#previous-work {
@@ -176,7 +189,7 @@ section.project {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	display: inline-block;
-	width: 49%; /* WHY CSS? */
+	width: 49.5%; /* WHY CSS? */
 	border: none;
 	vertical-align: top;
 }
@@ -193,11 +206,6 @@ section.project {
 
 aside {
 	text-align: right;
-}
-
-section h4 {
-	margin-bottom: 0.25em;
-	border-bottom: none;
 }
 
 aside ul,
