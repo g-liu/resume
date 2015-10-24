@@ -67,6 +67,7 @@ ul.bulleted {
 #main {
 	overflow: hidden;
 	padding: 0.333in 0.5in 0.1666in;
+	zoom: 1;
 }
 #main:before,
 #main:after {
@@ -75,9 +76,6 @@ ul.bulleted {
 }
 #main:after {
 	clear: both;
-}
-#main {
-	zoom: 1;
 }
 
 #left, #right {
@@ -146,8 +144,8 @@ table .job-description p:last-child {
 	color: #555;
 	font-style: italic;
 }
-#previous-work strong {
-	font-weight: 600;
+table#previous-work .job-title {
+	font-weight: 400;
 }
 #previous-work p {
 	display: inline;
