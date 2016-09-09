@@ -82,14 +82,14 @@ ul.bulleted {
 }
 
 #left {
-	padding: 0.333in 2.5% 0.1666in 0.5in;
+	padding: .25in .25in .25in 0;
 	background-color: #eee;
 	border-right: 1.5px solid #ebebeb;
-	flex: 8;
+	flex: 11;
 }
 
 #right {
-	padding: 0.333in 0.5in 0.1666in 2.5%;
+	padding: .25in;
 	flex: 29;
 }
 
@@ -117,6 +117,9 @@ table .job-title {
 }
 table .employer {
 	font-style: italic;
+}
+table .employer .location {
+	font-style: normal;
 }
 table .type {
 	text-align: right;
