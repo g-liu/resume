@@ -1,0 +1,69 @@
+{
+	"meta": {
+		"name": "Geoffrey Liu",
+		"byline": "",
+		"email": "main@g-liu.com",
+		"website": "g-liu.com",
+		"github": "g-liu",
+		"twitter": "geo_liu",
+		"linkedin": "/geoffliu",
+	},
+	"education": [{
+		"date_start": "2012-09-26",
+		"date_end": "2016-06-10",
+		"institution": "University of Washington",
+		"location_city": "Seattle",
+		"degrees": [{
+			"title": "Computer Science",
+			"type": "B.S."
+		}, {
+			"title": "Music",
+			"type": "Minor"
+		}],
+		"achivements": [
+			"Direct admission into Computer Science, 2012",
+			"Dean's List candidate, 2012―2016",
+			"3.73 overall GPA"
+		]
+	}],
+	"experience": [{
+		"title": "iOS Engineer",
+		"company": "Groupon",
+		"company_url": "https://groupon.com",
+		"location": "San Francisco Bay Area, CA & Seattle, WA",
+		"description": "TBD",
+		"date_start": "2017-04-01",
+		"date_end": null,
+	}, {
+		"title": "Web developer",
+		"company": "Groupon",
+		"company_url": "https://groupon.com",
+		"location": "Palo Alto, CA",
+		"description": "TBD",
+		"date_start": "2016-07-25",
+		"date_end": "2017-03-31",
+	}, {
+		"title": "Software Engineering Intern",
+		"company": "CDK Global",
+		"company_url": "https://www.cdkglobal.com",
+		"location": "Seattle, WA",
+		"description": "TBD",
+		"date_start": "2015-06-15",
+		"date_end": "2015-09-04",
+	}, {
+		"title": "Teaching Assistant",
+		"company": "University of Washington CSE",
+		"company_url": "https://cse.uw.edu",
+		"location": "Seattle, WA",
+		"description": "TBD",
+		"date_start": "2015-01-05",
+		"date_end": "2016-06-10"
+	}],
+	"projects": [{
+		"title": "Odo proxy software",
+		"date_start": "2019-02-01",
+		"date_end": "2019-04-01",
+		"description": "Major redesign of Groupon's open source proxy software. Improve ease of use with more intuitive layouts, . . . ., and keyboard shortcuts.",
+		"is_in_progress": false,
+	}]
+}
