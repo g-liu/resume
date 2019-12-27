@@ -26,6 +26,29 @@
 			"3.73 overall GPA"
 		]
 	}],
+	"coursework": [
+	    "Web programming",
+	    "Data structures",
+	    "Software engineering",
+	    "Databases",
+	    "Systems programming",
+	    "Graphics",
+	    "Introduction to HCI",
+	    "Artificial intelligence",
+	    "HW/SW interface",
+	    "Music theory",
+	    "Music history"
+	],
+	"programming_languages": [	
+	    "Java",
+	    "Angular / React",
+	    "JavaScript / jQuery",
+	    "PHP",
+	    "HTML5/CSS3",
+	    "C/C++",
+	    "Ruby on Rails",
+	    "Python"
+	],
 	"experience": [{
 		"title": "iOS Engineer",
 		"company": "Groupon",

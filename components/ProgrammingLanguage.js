@@ -1,4 +1,4 @@
-class Coursework extends React.Component {
+class ProgrammingLanguage extends React.Component {
   constructor(props) {
     super(props);
     this.state = { name: props.name };

@@ -37,9 +37,13 @@ class App extends React.Component {
 
   render() {
     const topData = this.state.data;
-
     if (!topData) { return null; }
-    return <Projects projects={this.state.data.projects} />
+
+    return [
+      <ProgrammingLanguages languages={this.state.data.programming_languages} key="plangs"/>,
+      <Courseworks courses={this.state.data.coursework} key="courseworks" />,
+      <Projects projects={this.state.data.projects} key="projects" />
+    ];
   }
 }
 
