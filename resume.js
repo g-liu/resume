@@ -22,6 +22,7 @@ var ContactType = {
 class Project extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       title: props.title,
       description: props.description
@@ -84,6 +85,32 @@ class ContactInfo extends React.Component {
   }
 }
 
-const domContainer = document.querySelector('#resume_container');
-const firstProject = <Project title="yeah" description="ok"/>
-ReactDOM.render(firstProject, domContainer);
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { data: null };
+  }
+
+  componentDidMount() {
+    fetch('./resume_data.json', {cache: "no-store"})
+      .then(results => {
+        return results.json();
+      }).then(data => {
+        this.setState({data: data});
+      });
+  }
+
+  render() {
+    const topData = this.state.data;
+
+    if (!topData) {
+      return null;
+    }
+    return topData.projects.map((project, index) => {
+      return <Project key={index} title={project.title} description={project.description} />;
+    });
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById("resume_container"));
