@@ -1,43 +1,50 @@
-function contactUri(id, type) {
-  switch (type.toUpperCase()) {
-    case 'GITHUB':
-      return `https://github.com/${id}`;
-      break;
-    case 'LINKEDIN':
-      return `https://linkedin.com/in/${id}`;
-      break;
-    case 'FACEBOOK':
-      return `https://facebook.com/${id}`;
-      break;
-    case 'TWITTER':
-      return `https://twitter.com/${id}`;
-      break;
-    case 'WEBSITE':
-      return `https://${id}`;
-      break;
-    case 'EMAIL':
-      return `mailto:${id}`;
-      break;
-    default:
-      return id;
-      break;
-  }
-}
-
 function contactIcon(type) {
   switch (type.toUpperCase()) {
     case 'GITHUB':
       return 'fa fa-github-alt';
+      break;
     case 'WEBSITE':
       return 'fa fa-globe';
+      break;
     case 'TWITTER':
       return 'fa fa-twitter';
+      break;
     case 'EMAIL':
       return 'fa fa-envelope-o';
+      break;
     case 'LINKEDIN':
       return 'fa fa-linkedin';
+      break;
     default:
       return null;
+      break;
+  }
+}
+
+function displayName(name, type) {
+  switch (type.toUpperCase()) {
+    case 'TWITTER':
+      return <span>
+          Twitter: <a href={`https://twitter.com/${name}`}>@{name}</a>
+        </span>;
+      break;
+    case 'LINKEDIN':
+      return <span>
+          LinkedIn: <a href={`https://linkedin.com/in/${name}`}>/{name}</a>
+        </span>;
+      break;
+    case 'WEBSITE':
+      return <a href={`https://${name}`} target="_BLANK">https://{name}</a>;
+      break;
+    case 'GITHUB':
+      return <span>
+          GitHub: <a href={`https://github.com/${name}`}>{name}</a>
+        </span>;
+    case 'EMAIL':
+      return <a href={`mailto:${name}`}>{name}</a>;
+    default:
+      return name;
+      break;
   }
 }
 
@@ -48,13 +55,12 @@ class ContactItem extends SideListItem {
   }
 
   render() {
-    const uri = contactUri(this.state.name, this.state.type);
     const icon = contactIcon(this.state.type);
+    const name = displayName(this.state.name, this.state.type);
 
     return (<li>
-        <a href={uri} target="_BLANK">
-          {this.state.name}
-        </a>
+        {name}
+        {'\u00A0'}
         <span className={icon}></span>
       </li>
     );

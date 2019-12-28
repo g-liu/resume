@@ -61,7 +61,7 @@ class Education extends React.Component {
 					<td className="job-title"><h4>{degreesEarned}</h4></td>
 				</tr>,
 				<tr key="eeh2">
-					<td className="employer" colSpan="2">{fancyInstitutionName}, {this.state.locationCity}</td>
+					<td className="employer" colSpan="2">{fancyInstitutionName}, <span className="location">{this.state.locationCity}</span></td>
 				</tr>,
 				<tr key="eeh3">
 					<td className="job-description" colSpan="2">

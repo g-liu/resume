@@ -11,7 +11,7 @@ class Projects extends React.Component {
 	    }
 	    return [<h3 key="title">Projects</h3>,
         this.state.projects.map((project, index) => {
-	      return <Project key={index} title={project.title} description={project.description} />;
+	      return <Project key={index} title={project.title} inProgress={project.is_in_progress} description={project.description} />;
 	    })];
 	}
 }

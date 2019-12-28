@@ -9,14 +9,14 @@
 			"type": "website",
 			"id": "g-liu.com"
 		}, {
+			"type": "linkedin",
+			"id": "geoffliu"
+		}, {
 			"type": "github",
 			"id": "g-liu"
 		}, {
 			"type": "twitter",
 			"id": "geo_liu"
-		}, {
-			"type": "linkedin",
-			"id": "geoffliu"
 		}]
 	},
 	"education": [{
@@ -28,7 +28,8 @@
 		"achievements": [
 			"Direct admission into Computer Science, 2012",
 			"Dean's List candidate, 2012―2016",
-			"3.73 overall GPA"
+			"3.73 overall GPA",
+			"Teaching assistant, ASUW webmaster, musician in UW Symphony"
 		]
 	}],
 	"coursework": [
@@ -44,13 +45,13 @@
 	    "Music theory",
 	    "Music history"
 	],
-	"programming_languages": [	
+	"programming_languages": [
+		"Swift / Objective-C",
+	    "JS & various libraries",
 	    "Java",
-	    "Angular / React",
-	    "JavaScript / jQuery",
 	    "PHP",
-	    "HTML5/CSS3",
-	    "C/C++",
+	    "HTML5 / CSS3",
+	    "C / C++",
 	    "Ruby on Rails",
 	    "Python"
 	],
@@ -60,18 +61,17 @@
 		"French"
 	],
 	"interests": [
+    	"Teaching / speaking",
     	"UI/UX design",
-    	"Mobile app dev",
-    	"Teaching",
-    	"Blogging",
-    	"Classical music"
+    	"Mobile app development",
+    	"Music performance"
 	],
 	"experiences": [{
 		"title": "iOS Engineer",
 		"company": "Groupon",
 		"company_url": "https://groupon.com",
-		"location": "San Francisco Bay Area, CA & Seattle, WA",
-		"description": "Working on the ios app",
+		"location": "Santa Clara CA & Seattle WA",
+		"description": "Owned the development of many features in the Groupon iOS consumer app, a top-25 app in the App Store. Wrote extensive unit test and UI automation suites. Routine bug fixes and performance improvements.",
 		"date_start": "2017-04-01",
 		"date_end": null
 	}, {
@@ -79,7 +79,7 @@
 		"company": "Groupon",
 		"company_url": "https://groupon.com",
 		"location": "Palo Alto CA",
-		"description": "Working on various products owned by Groupon Goods, developing new features, and fixing bugs.",
+		"description": "Develop web-specific features of the Groupon Goods online presence. Leverage internal JavaScript framework for front-end UX and maintain browser automation tests.",
 		"date_start": "2016-07-25",
 		"date_end": "2017-03-31"
 	}, {
@@ -97,25 +97,23 @@
 		"location": "Seattle WA",
 		"description": "TBD",
 		"date_start": "2015-01-05",
-		"date_end": "2016-06-10"
+		"date_end": "2016-06-10",
+		"description": "Prepare for and teach sections of 15-25 students, grade homework assignments and exams, and hold office hours for students."
 	}],
 	"projects": [{
 		"title": "Odo proxy software",
-		"date_start": "2019-02-01",
-		"date_end": "2019-04-01",
-		"description": "Major redesign of Groupon's open source proxy software. Improve ease of use with more intuitive layouts, . . . ., and keyboard shortcuts.",
+		"description": "Owned the redesign of Groupon's open-source proxy software. Rewrote significant portions of the Groupon front-end using Bootstrap framework, introducing usability features such as keyboard navigation.",
 		"is_in_progress": false
 	}, {
 		"title": "Periodic Table browser",
-		"date_start": "2015-02-01",
-		"date_end": "2015-04-01",
 		"description": "Allows tabular comparison of multiple elements. Currently rewriting in Angular JS. Originally, data stored as XML files, parsed and displayed with jQuery.",
 		"is_in_progress": true
 	}, {
 		"title": "KingFM schedule browser",
-		"date_start": "2015-02-01",
-		"date_end": "2015-08-01",
 		"description": "Angular app that scrapes 98.1 KING FM's website and displays programming schedule in a responsive, user-friendly interface.",
 		"is_in_progress": true
+	}, {
+		"title": "This resume!",
+		"description": "Written with React and JSX and data provided by a simple JSON file. Job-seekers can create their own version simply by editing the data file!"
 	}]
 }

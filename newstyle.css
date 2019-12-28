@@ -102,6 +102,10 @@ span.fa {
 	margin-left: 1px;
 	text-align: center;
 }
+span.in-progress {
+	font-style: italic;
+	color: #555;
+}
 
 table .years {
 	width: 13%;

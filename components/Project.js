@@ -4,6 +4,7 @@ class Project extends React.Component {
 
     this.state = {
       title: props.title,
+      inProgress: props.inProgress,
       description: props.description
     }
   }
@@ -11,7 +12,7 @@ class Project extends React.Component {
   render() {
     return (<section className="project">
       <h4>{this.state.title}</h4>
-      <p>{this.state.description}</p>
+      <p>{this.state.inProgress ? <span className="in-progress">(In progress)</span> : ''} {this.state.description}</p>
     </section>);
   }
 }

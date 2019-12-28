@@ -11,7 +11,7 @@ class Contacts extends SideList {
 		return (
 			<aside id="about">
 				<h3>{this.state.title}</h3>
-				<p><em>Contact details<br />available upon request</em></p>
+				<p><em>Additional contact details<br />available upon request</em></p>
 
 				<ul>
 					{this.state.items.map((item, index) => {
