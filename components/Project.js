@@ -1,18 +1,8 @@
-class Project extends React.Component {
-  constructor(props) {
-    super(props);
+const Project = (props) => {
+  const {title, inProgress, description} = props;
 
-    this.state = {
-      title: props.title,
-      inProgress: props.inProgress,
-      description: props.description
-    }
-  }
-
-  render() {
-    return (<section className="project">
-      <h4>{this.state.title}</h4>
-      <p>{this.state.inProgress ? <span className="in-progress">(In progress)</span> : ''} {this.state.description}</p>
-    </section>);
-  }
+  return <section className="project">
+    <h4>{title}</h4>
+    <p>{inProgress ? <span className="in-progress">(In progress)</span> : ''} {description}</p>
+  </section>;
 }

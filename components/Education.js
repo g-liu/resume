@@ -39,40 +39,29 @@ function fancifyNoun(noun) {
 	});
 }
 
-class Education extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {startDate: props.startDate,
-			endDate: props.endDate,
-			degrees: props.degrees,
-			institution: props.institution,
-			locationCity: props.locationCity,
-			achievements: props.achievements,
-			description: props.description};
-	}
+const Education = (props) => {
+	const {startDate, endDate, degrees, institution, locationCity, achievements, description} = props;
 
-	render() {
-		const degreesEarned = this.state.degrees.join('; ');
-		const displayYears = displayDate(this.state.startDate, this.state.endDate, false);
-		const fancyInstitutionName = fancifyNoun(this.state.institution);
+	const degreesEarned = degrees.join('; ');
+	const displayYears = displayDate(startDate, endDate, false);
+	const fancyInstitutionName = fancifyNoun(institution);
 
-		return [<tr key="eeh">
-					<td className="years" rowSpan="3">{displayYears}</td>
-					<td className="job-title"><h4>{degreesEarned}</h4></td>
-				</tr>,
-				<tr key="eeh2">
-					<td className="employer" colSpan="2">{fancyInstitutionName}, <span className="location">{this.state.locationCity}</span></td>
-				</tr>,
-				<tr key="eeh3">
-					<td className="job-description" colSpan="2">
-						{this.state.achievements && this.state.achievements.length > 0 ?
-							<ul className="bulleted">
-								{this.state.achievements.map((achievement, index) => {
-									return <li key={index}>{achievement}</li>
-								})}
-							</ul>
-						 : null}
-					</td>
-				</tr>];
-	}
+	return [<tr key="eeh">
+				<td className="years" rowSpan="3">{displayYears}</td>
+				<td className="job-title"><h4>{degreesEarned}</h4></td>
+			</tr>,
+			<tr key="eeh2">
+				<td className="employer" colSpan="2">{fancyInstitutionName}, <span className="location">{locationCity}</span></td>
+			</tr>,
+			<tr key="eeh3">
+				<td className="job-description" colSpan="2">
+					{achievements && achievements.length > 0 ?
+						<ul className="bulleted">
+							{achievements.map((achievement, index) => {
+								return <li key={index}>{achievement}</li>
+							})}
+						</ul>
+					 : null}
+				</td>
+			</tr>];
 }
