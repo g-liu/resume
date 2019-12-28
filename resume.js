@@ -31,8 +31,8 @@ class App extends React.Component {
         <SideList listId="interests" title="Interests" items={this.state.data.interests} />
       </div>,
       <div id="right" key="right">
-        <Educations items={this.state.data.education} />
         <Experiences items={this.state.data.experiences} />
+        <Educations items={this.state.data.education} />
         <Projects projects={this.state.data.projects} />
       </div>
     ];
