@@ -1,5 +1,6 @@
 import React from 'react';
 import SideListItem from './SideListItem';
+import 'font-awesome/css/font-awesome.min.css';
 
 function contactIcon(type) {
   switch (type.toUpperCase()) {

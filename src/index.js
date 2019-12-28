@@ -10,35 +10,26 @@ import './normalize.css';
 import './newstyle.css';
 import resumeData from './resume_data';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
+const App = (props) => {
+  if (!resumeData) { return null; }
 
-    this.state = { data: resumeData };
-  }
-
-  render() {
-    const topData = this.state.data;
-    if (!topData) { return null; }
-
-    return [
-      <Header name={this.state.data.meta.name} byline={this.state.data.meta.byline} key="header" />,
-      <div id="main" key="main">
-        <div id="left">
-          <Contacts items={this.state.data.meta.contacts} />
-          <SideList listId="skills" title="Skills" items={this.state.data.skills} />
-          <SideList listId="coursework" title="Coursework" items={this.state.data.coursework} />
-          <SideList listId="languages" title="Languages" items={this.state.data.languages} />
-          <SideList listId="interests" title="Interests" items={this.state.data.interests} />
-        </div>
-        <div id="right">
-          <Experiences items={this.state.data.experiences} />
-          <Educations items={this.state.data.education} />
-          <Projects projects={this.state.data.projects} />
-        </div>
+  return [
+    <Header name={resumeData.meta.name} byline={resumeData.meta.byline} key="header" />,
+    <div id="main" key="main">
+      <div id="left">
+        <Contacts items={resumeData.meta.contacts} />
+        <SideList listId="skills" title="Skills" items={resumeData.skills} />
+        <SideList listId="coursework" title="Coursework" items={resumeData.coursework} />
+        <SideList listId="languages" title="Languages" items={resumeData.languages} />
+        <SideList listId="interests" title="Interests" items={resumeData.interests} />
       </div>
-    ];
-  }
+      <div id="right">
+        <Experiences items={resumeData.experiences} />
+        <Educations items={resumeData.education} />
+        <Projects projects={resumeData.projects} />
+      </div>
+    </div>
+  ];
 }
 
 ReactDOM.render(<App />, document.getElementById("resume-container"));

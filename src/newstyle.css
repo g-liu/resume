@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
+
 html, body {
 	width: 8.5in !important;
 	height: 11in !important;
 	margin: 0;
-	font-family: "Libre Baskerville", serif;
+	font-family: 'Libre Baskerville', serif;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
 }
@@ -53,7 +55,7 @@ p, ul, span, code, tt, kbd, td {
 	line-height: 1.4;
 }
 code {
-	font-family: "Lucida Console", monospace;
+	font-family: 'Lucida Console', monospace;
 }
 
 ul.bulleted {
