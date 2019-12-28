@@ -1,0 +1,31 @@
+class Educations extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {items: props.items};
+	}
+
+	render() {
+		if (!this.state.items || this.state.items.length == 0) { return null; }
+
+		return [
+			<h3 key="eeh">Education</h3>,
+
+			<table key="eet">
+				<thead></thead>
+				<tbody>
+					{this.state.items.map((item, index) => {
+						return <Education
+							startDate={item.date_start}
+							endDate={item.date_end}
+							degrees={item.degrees}
+							institution={item.institution}
+							locationCity={item.location_city}
+							achievements={item.achievements}
+							key={index} />
+					})}
+				</tbody>
+				<tfoot></tfoot>
+			</table>
+		]
+	}
+}
