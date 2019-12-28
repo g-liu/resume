@@ -18,21 +18,21 @@ header {
 	background-color: #3a3a3a;
 	border-bottom: 1px solid #333;
 	padding: 0.666in 0.5in 0.1875in;
-}
 
-header h1,
-header h2 {
-	color: white;
-	margin: 0;
-	text-align: center;
-}
+	h1,
+	h2 {
+		color: white;
+		margin: 0;
+		text-align: center;
+	}
+	
+	h1 { font-size: 41px; }
 
-header h1 { font-size: 41px; }
-
-header h2 {
-	margin-top: 0.166em;
-	font-weight: normal;
-	font-size: 18px;
+	h2 {
+		margin-top: 0.166em;
+		font-weight: normal;
+		font-size: 18px;
+	}
 }
 
 h3 {
@@ -74,6 +74,7 @@ ul.bulleted {
 	}
 }
 
+/* TODO: Wasn't this renamed to resume-container? */
 #main {
 	display: flex;
 }
@@ -95,73 +96,87 @@ ul.bulleted {
 	flex: 29;
 }
 
-span.sm-caps {
-	font-size: small;
-	font-variant: small-caps;
-}
-span.fa {
-	width: 1em;
-	margin-left: 1px;
-	text-align: center;
-}
-span.in-progress {
-	font-style: italic;
-	color: #555;
+span {
+	.sm-caps {
+		font-size: small;
+		font-variant: small-caps;
+	}
+
+	.fa {
+		width: 1em;
+		margin-left: 1px;
+		text-align: center;
+	}
+
+	.in-progress {
+		font-style: italic;
+		color: #555;
+	}
 }
 
-table .years {
-	width: 13%;
-	padding-right: 2%;
-	vertical-align: top;
-}
-table .years .months {
-	font-size: 11px;
-}
-table .job-title {
-	width: 75%;
-	font-weight: bold;
-}
-table .employer {
-	font-style: italic;
-}
-table .employer .location {
-	font-style: normal;
-}
-table .type {
-	text-align: right;
-	vertical-align: bottom;
-	color: #999;
-	font-size: x-small;
-}
-table .job-description {
-	padding-top: 0.33em;
-	padding-bottom: 0.5em;;
-}
-table .job-description p:first-child {
-	margin-top: 0;
-}
-table .job-description p:last-child {
-	margin-bottom: 0;
-}
+table {
+	.years {
+		width: 13%;
+		padding-right: 2%;
+		vertical-align: top;
+		
+		.months {
+			font-size: 11px;
+		}
+	}
 
-table tr.previous {
-	color: #555;
-}
+	.job-title {
+		width: 75%;
+		font-weight: bold;
+	}
 
-table tr.previous .job-title:after {
-	content: ",\00a0";
-}
+	.employer {
+		font-style: italic;
+		.location {
+			font-style: normal;
+		}
+	}
 
-table tr.previous td {
-	padding: 0.25em 0;
-}
+	.type {
+		text-align: right;
+		vertical-align: bottom;
+		color: #999;
+		font-size: x-small;
+	}
 
-table tr.previous h4 {
-	display: inline; /* want run-in but not supported */
-}
+	.job-description {
+		padding-top: 0.33em;
+		padding-bottom: 0.5em;
 
-table td {
-	vertical-align: top;
+		p {
+			&:first-child {
+				margin-top: 0;
+			}
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	tr.previous {
+		color: #555;
+		.job-title:after {
+			content: ",\00a0";
+		}
+
+		td {
+			padding: 0.25em 0;
+		}
+
+		h4 {
+			display: inline; /* want run-in but not supported */
+		}
+	}
+
+	td {
+		vertical-align: top;
+	}
 }
 
 /*#previous-work {
@@ -202,11 +217,14 @@ section.project {
 	border: none;
 	vertical-align: top;
 }
-.row section.project:first-child {
-	padding-right: 1.5%;
-}
-.row section.project:last-child {
-	padding-left: 1.5%;
+.row section.project {
+	&:first-child {
+		padding-right: 1.5%;
+	}
+	
+	&:last-child {
+		padding-left: 1.5%;
+	}
 }
 
 #right h3:last-of-type ~ .row section.project h4 {

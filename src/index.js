@@ -6,8 +6,8 @@ import Contacts from './components/Contacts'
 import Experiences from './components/Experiences'
 import Educations from './components/Educations'
 import Projects from './components/Projects'
-import './normalize.css';
-import './newstyle.css';
+import 'normalize.css/normalize.css';
+import './style.scss';
 import resumeData from './resume_data';
 
 const App = (props) => {
