@@ -1,3 +1,5 @@
+import React from 'react';
+
 class SideListItem extends React.Component {
   constructor(props) {
     super(props);
@@ -8,3 +10,5 @@ class SideListItem extends React.Component {
     return (<li>{this.state.name}</li>);
   }
 }
+
+export default SideListItem;

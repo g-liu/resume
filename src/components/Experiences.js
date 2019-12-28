@@ -1,7 +1,10 @@
+import React from 'react';
+import Experience from './Experience';
+
 const Experiences = (props) => {
 	const {items} = props;
 	
-	if (!items || items.length == 0) { return null; }
+	if (!items || items.length === 0) { return null; }
 
 	return [
 		<h3 key="weh">Work Experience</h3>,
@@ -25,3 +28,5 @@ const Experiences = (props) => {
 		</table>
 	];
 }
+
+export default Experiences;

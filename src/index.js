@@ -1,21 +1,20 @@
-'use strict';
-
-const e = React.createElement;
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Header from './components/Header'
+import SideList from './components/SideList'
+import Contacts from './components/Contacts'
+import Experiences from './components/Experiences'
+import Educations from './components/Educations'
+import Projects from './components/Projects'
+import './normalize.css';
+import './newstyle.css';
+import resumeData from './resume_data';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { data: null };
-  }
-
-  componentDidMount() {
-    fetch('./resume_data.json', {cache: "no-store"})
-      .then(results => {
-        return results.json();
-      }).then(data => {
-        this.setState({data: data});
-      });
+    this.state = { data: resumeData };
   }
 
   render() {

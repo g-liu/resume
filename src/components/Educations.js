@@ -1,7 +1,10 @@
+import React from 'react';
+import Education from './Education';
+
 const Educations = (props) => {
 	const {items} = props
 	
-	if (!items || items.length == 0) { return null; }
+	if (!items || items.length === 0) { return null; }
 
 	return [
 		<h3 key="eeh">Education</h3>,
@@ -24,3 +27,5 @@ const Educations = (props) => {
 		</table>
 	];
 }
+
+export default Educations;

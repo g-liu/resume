@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Project = (props) => {
   const {title, inProgress, description} = props;
 
@@ -6,3 +8,5 @@ const Project = (props) => {
     <p>{inProgress ? <span className="in-progress">(In progress)</span> : ''} {description}</p>
   </section>;
 }
+
+export default Project;

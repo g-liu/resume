@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Header = (props) => {
 	const {name, byline} = props;
 
@@ -8,3 +10,5 @@ const Header = (props) => {
 		</header>
 	);
 }
+
+export default Header;

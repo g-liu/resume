@@ -1,3 +1,7 @@
+import React from 'react';
+import SideList from './SideList';
+import ContactItem from './ContactItem';
+
 class Contacts extends SideList {
 	constructor(props) {
 		super(props);
@@ -7,7 +11,7 @@ class Contacts extends SideList {
 	}
 
 	render() {
-		if (!this.state.items || this.state.items.length == 0) { return null; }
+		if (!this.state.items || this.state.items.length === 0) { return null; }
 		return (
 			<aside id="about">
 				<h3>{this.state.title}</h3>
@@ -22,3 +26,5 @@ class Contacts extends SideList {
 		);
 	}
 }
+
+export default Contacts;

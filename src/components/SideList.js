@@ -1,3 +1,6 @@
+import React from 'react';
+import SideListItem from './SideListItem';
+
 /* Generic top level class for a general list */
 class SideList extends React.Component {
   constructor(props) {
@@ -6,7 +9,7 @@ class SideList extends React.Component {
   }
 
   render() {
-  	if (!this.state.items || this.state.items.length == 0) {
+  	if (!this.state.items || this.state.items.length === 0) {
   		return null;
   	}
     return (<aside id="{this.state.id}">
@@ -19,3 +22,5 @@ class SideList extends React.Component {
 	</aside>);
   }
 }
+
+export default SideList;

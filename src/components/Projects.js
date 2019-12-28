@@ -1,7 +1,10 @@
+import React from 'react';
+import Project from './Project';
+
 const Projects = (props) => {
 	const {projects} = props;
 
-	if (!projects || projects.length == 0) {
+	if (!projects || projects.length === 0) {
       return null;
     }
     
@@ -10,3 +13,5 @@ const Projects = (props) => {
 	      return <Project key={index} title={project.title} inProgress={project.is_in_progress} description={project.description} />;
 	    })];
 }
+
+export default Projects;

@@ -1,3 +1,6 @@
+import React from 'react';
+import {displayDate, fancifyNoun} from './helpers';
+
 const Experience = (props) => {
 	const {startDate, endDate, title, company, companyUrl, location, description} = props;
 	const displayYears = displayDate(startDate, endDate);
@@ -19,3 +22,5 @@ const Experience = (props) => {
 				</td>
 			</tr>];
 }
+
+export default Experience;
