@@ -78,7 +78,7 @@
 		"title": "Web developer",
 		"company": "Groupon",
 		"company_url": "https://groupon.com",
-		"location": "Palo Alto, CA",
+		"location": "Palo Alto CA",
 		"description": "Working on various products owned by Groupon Goods, developing new features, and fixing bugs.",
 		"date_start": "2016-07-25",
 		"date_end": "2017-03-31"
@@ -86,7 +86,7 @@
 		"title": "Software Engineering Intern",
 		"company": "CDK Global",
 		"company_url": "https://www.cdkglobal.com",
-		"location": "Seattle, WA",
+		"location": "Seattle WA",
 		"description": "Add functionality to existing Angular JS mobile app to allow car dealers to manage their incentives. Integrated with CDK's in-house REST APIs, wrote extensive tests. Added push notifications through Pushwoosh.",
 		"date_start": "2015-06-15",
 		"date_end": "2015-09-04"
@@ -94,7 +94,7 @@
 		"title": "Teaching Assistant",
 		"company": "University of Washington CSE",
 		"company_url": "https://cse.uw.edu",
-		"location": "Seattle, WA",
+		"location": "Seattle WA",
 		"description": "TBD",
 		"date_start": "2015-01-05",
 		"date_end": "2016-06-10"
