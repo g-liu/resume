@@ -2,7 +2,7 @@
 class SideList extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { title: "List", id: "list", items: props.items };
+    this.state = { title: props.title, id: props.listId, items: props.items };
   }
 
   render() {

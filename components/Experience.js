@@ -1,21 +1,26 @@
 class Experience extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {};
+		this.state = {startDate: props.startDate,
+			endDate: props.endDate,
+			title: props.title,
+			company: props.company,
+			companyUrl: props.companyUrl,
+			location: props.location,
+			description: props.description};
 	}
 
 	render() {
-		return [<tr>
-					<td class="years" rowspan="3"><span class="months">Jun-Aug</span> 2015</td>
-					<td class="job-title"><h4>Software Engineering Intern</h4></td>
-					<td class="type">TYPE</td>
+		return [<tr key="heh">
+					<td className="years" rowSpan="3"><span className="months">Jun-Aug</span> 2015</td>
+					<td className="job-title"><h4>{this.state.title}</h4></td>
 				</tr>,
-				<tr>
-					<td class="employer" colspan="2"><a href="http://cdk.com">CDK Global</a></td>
+				<tr key="heh2">
+					<td className="employer" colSpan="2"><a href={this.state.companyUrl}>{this.state.company}</a></td>
 				</tr>,
-				<tr>
-					<td class="job-description" colspan="2">
-						<p>Add functionality to existing Angular JS mobile app to allow car dealers to manage their incentives. Integrated with CDK's in-house REST APIs, wrote extensive tests. Added push notifications through Pushwoosh.</p>
+				<tr key="heh3">
+					<td className="job-description" colSpan="2">
+						<p>{this.state.description}</p>
 					</td>
 				</tr>];
 	}

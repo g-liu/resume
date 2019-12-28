@@ -60,12 +60,24 @@
 	    "Ruby on Rails",
 	    "Python"
 	],
-	"experience": [{
+	"languages": [
+		"English",
+		"Chinese",
+		"French"
+	],
+	"interests": [
+    	"UI/UX design",
+    	"Mobile app dev",
+    	"Teaching",
+    	"Blogging",
+    	"Classical music"
+	],
+	"experiences": [{
 		"title": "iOS Engineer",
 		"company": "Groupon",
 		"company_url": "https://groupon.com",
 		"location": "San Francisco Bay Area, CA & Seattle, WA",
-		"description": "TBD",
+		"description": "Working on the ios app",
 		"date_start": "2017-04-01",
 		"date_end": null
 	}, {
@@ -73,7 +85,7 @@
 		"company": "Groupon",
 		"company_url": "https://groupon.com",
 		"location": "Palo Alto, CA",
-		"description": "TBD",
+		"description": "Working on various products owned by Groupon Goods, developing new features, and fixing bugs.",
 		"date_start": "2016-07-25",
 		"date_end": "2017-03-31"
 	}, {
@@ -81,7 +93,7 @@
 		"company": "CDK Global",
 		"company_url": "https://www.cdkglobal.com",
 		"location": "Seattle, WA",
-		"description": "TBD",
+		"description": "Add functionality to existing Angular JS mobile app to allow car dealers to manage their incentives. Integrated with CDK's in-house REST APIs, wrote extensive tests. Added push notifications through Pushwoosh.",
 		"date_start": "2015-06-15",
 		"date_end": "2015-09-04"
 	}, {
