@@ -1,4 +1,4 @@
-class ProgrammingLanguage extends React.Component {
+class SideListItem extends React.Component {
   constructor(props) {
     super(props);
     this.state = { name: props.name };

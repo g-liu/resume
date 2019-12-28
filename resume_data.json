@@ -2,11 +2,22 @@
 	"meta": {
 		"name": "Geoffrey Liu",
 		"byline": "",
-		"email": "main@g-liu.com",
-		"website": "g-liu.com",
-		"github": "g-liu",
-		"twitter": "geo_liu",
-		"linkedin": "/geoffliu"
+		"contacts": [{
+			"type": "email",
+			"id": "main@g-liu.com"
+		}, {
+			"type": "website",
+			"id": "g-liu.com"
+		}, {
+			"type": "github",
+			"id": "g-liu"
+		}, {
+			"type": "twitter",
+			"id": "geo_liu"
+		}, {
+			"type": "linkedin",
+			"id": "geoffliu"
+		}]
 	},
 	"education": [{
 		"date_start": "2012-09-26",
