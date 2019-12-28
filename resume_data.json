@@ -45,11 +45,13 @@
 	    "Music theory",
 	    "Music history"
 	],
-	"programming_languages": [
+	"skills": [
 		"Swift / Objective-C",
-	    "JS & various libraries",
+		"UI/Unit testing",
+	    "JavaScript / ES6",
+	    "React / Angular / Node",
 	    "Java",
-	    "PHP",
+	    "PHP / WordPress",
 	    "HTML5 / CSS3",
 	    "C / C++",
 	    "Ruby on Rails",
@@ -64,14 +66,15 @@
     	"Teaching / speaking",
     	"UI/UX design",
     	"Mobile app development",
-    	"Music performance"
+    	"Music performance",
+    	"Photography"
 	],
 	"experiences": [{
 		"title": "iOS Engineer",
 		"company": "Groupon",
 		"company_url": "https://groupon.com",
 		"location": "Santa Clara CA & Seattle WA",
-		"description": "Owned the development of many features in the Groupon iOS consumer app, a top-25 app in the App Store. Wrote extensive unit test and UI automation suites. Routine bug fixes and performance improvements.",
+		"description": "Owned the development of many features in the Groupon iOS consumer app, a top-25 App Store app. Wrote extensive unit test and UI automation suites. Advised managers on design and implementation decisions.",
 		"date_start": "2017-04-01",
 		"date_end": null
 	}, {
@@ -114,6 +117,6 @@
 		"is_in_progress": true
 	}, {
 		"title": "This resume!",
-		"description": "Written with React and JSX and data provided by a simple JSON file. Job-seekers can create their own version simply by editing the data file!"
+		"description": "Open-source template, written with React and data provided by a simple JSON file. Job-seekers can quickly create their own resume simply by editing the JSON!"
 	}]
 }

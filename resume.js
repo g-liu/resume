@@ -27,7 +27,7 @@ class App extends React.Component {
       <div id="main" key="main">
         <div id="left">
           <Contacts items={this.state.data.meta.contacts} />
-          <SideList listId="programming" title="Programming" items={this.state.data.programming_languages} />
+          <SideList listId="skills" title="Skills" items={this.state.data.skills} />
           <SideList listId="coursework" title="Coursework" items={this.state.data.coursework} />
           <SideList listId="languages" title="Languages" items={this.state.data.languages} />
           <SideList listId="interests" title="Interests" items={this.state.data.interests} />
