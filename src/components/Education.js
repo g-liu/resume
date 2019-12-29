@@ -8,15 +8,12 @@ const Education = (props) => {
 	const displayYears = displayDate(startDate, endDate, false);
 	const fancyInstitutionName = fancifyNoun(institution);
 
-	return [<tr key="eeh">
+	return <tr>
 				<td className="years" rowSpan="3">{displayYears}</td>
-				<td className="job-title"><h4>{degreesEarned}</h4></td>
-			</tr>,
-			<tr key="eeh2">
-				<td className="employer" colSpan="2">{fancyInstitutionName}, <span className="location">{locationCity}</span></td>
-			</tr>,
-			<tr key="eeh3">
-				<td className="job-description" colSpan="2">
+				<td class="job-details">
+					<h4>{degreesEarned}</h4>
+					<span class="company-name">{fancyInstitutionName}</span>, <span className="location">{locationCity}</span>
+
 					{achievements && achievements.length > 0 ?
 						<ul className="bulleted">
 							{achievements.map((achievement, index) => {
@@ -25,7 +22,7 @@ const Education = (props) => {
 						</ul>
 					 : null}
 				</td>
-			</tr>];
+			</tr>;
 }
 
 export default Education;

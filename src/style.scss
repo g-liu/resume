@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&display=swap');
 
 html, body {
 	width: 8.5in !important;
@@ -97,19 +97,28 @@ ul.bulleted {
 }
 
 span {
-	.sm-caps {
+	&.sm-caps {
 		font-size: small;
 		font-variant: small-caps;
 	}
 
-	.fa {
+	&.fa {
 		width: 1em;
 		margin-left: 1px;
 		text-align: center;
 	}
 
-	.in-progress {
+	&.in-progress {
 		font-style: italic;
+		color: #999;
+	}
+
+	&.company-name {
+		font-style: italic;
+		// font-size: 13px;
+	}
+
+	&.location {
 		color: #555;
 	}
 }
@@ -123,11 +132,6 @@ table {
 		.months {
 			font-size: 11px;
 		}
-	}
-
-	.job-title {
-		width: 75%;
-		font-weight: bold;
 	}
 
 	.employer {
@@ -144,18 +148,12 @@ table {
 		font-size: x-small;
 	}
 
-	.job-description {
-		padding-top: 0.33em;
-		padding-bottom: 0.5em;
+	.job-details h4 {
+		display: inline;
+		margin: 0;
 
-		p {
-			&:first-child {
-				margin-top: 0;
-			}
-			
-			&:last-child {
-				margin-bottom: 0;
-			}
+		&:after {
+			content: "\00a0∙\00a0";
 		}
 	}
 
@@ -176,6 +174,11 @@ table {
 
 	td {
 		vertical-align: top;
+	}
+
+	p {
+		margin-top: 0.5em;
+		// margin-bottom: 0.5em;
 	}
 }
 

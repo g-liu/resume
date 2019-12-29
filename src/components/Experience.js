@@ -6,21 +6,16 @@ const Experience = (props) => {
 	const displayYears = displayDate(startDate, endDate);
 	const fancyCompanyName = fancifyNoun(company);
 
-	return [<tr key="heh">
-				<td className="years" rowSpan="3">{displayYears}</td>
-				<td className="job-title"><h4>{title}</h4></td>
-			</tr>,
-			<tr key="heh2">
-				<td className="employer" colSpan="2">
-					<a href={companyUrl}>{fancyCompanyName}</a>,&nbsp;
+	return <tr>
+				<td className="years">{displayYears}</td>
+				<td className="job-details">
+					<h4>{title}</h4>
+					<span className="company-name"><a href={companyUrl}>{fancyCompanyName}</a></span>,&nbsp;
 					<span className="location">{location}</span>
-				</td>
-			</tr>,
-			<tr key="heh3">
-				<td className="job-description" colSpan="2">
+				
 					<p>{description}</p>
 				</td>
-			</tr>];
+			</tr>
 }
 
 export default Experience;

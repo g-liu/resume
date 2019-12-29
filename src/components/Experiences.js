@@ -7,7 +7,7 @@ const Experiences = (props) => {
 	if (!items || items.length === 0) { return null; }
 
 	return [
-		<h3 key="weh">Work Experience</h3>,
+		<h3 key="weh">Work experience</h3>,
 
 		<table key="wet">
 			<thead></thead>
@@ -18,7 +18,7 @@ const Experiences = (props) => {
 						endDate={item.date_end}
 						title={item.title}
 						company={item.company}
-						company_url={item.company_url}
+						companyUrl={item.company_url}
 						location={item.location}
 						description={item.description}
 						key={index} />
