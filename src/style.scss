@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&display=swap');
 
 html, body {
-	width: 8.5in !important;
-	height: 11in !important;
 	margin: 0;
 	font-family: 'Libre Baskerville', serif;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
@@ -12,6 +10,7 @@ html, body {
 body {
 	display: flex;
 	flex-direction: column;
+	background: black;
 }
 
 header {
@@ -63,7 +62,13 @@ ul.bulleted {
 	list-style: initial;
 }
 
-/* Neutralize all links in print */
+#resume-container {
+	width: 8.5in;
+	height: 11in;
+	margin: 0 auto;
+	background: white;
+}
+
 @media only print {
 	a {
 		color: inherit;
@@ -72,9 +77,18 @@ ul.bulleted {
 	abbr, abbr[title] {
 		border-bottom: none;
 	}
+
+	body {
+		background: initial;
+	}
+
+	#resume-container {
+		width: initial;
+		height: initial;
+		margin: initial;
+	}
 }
 
-/* TODO: Wasn't this renamed to resume-container? */
 #main {
 	display: flex;
 }
