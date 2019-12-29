@@ -10,9 +10,9 @@ const Education = (props) => {
 
 	return <tr>
 				<td className="years" rowSpan="3">{displayYears}</td>
-				<td class="job-details">
+				<td className="job-details">
 					<h4>{degreesEarned}</h4>
-					<span class="company-name">{fancyInstitutionName}</span>, <span className="location">{locationCity}</span>
+					<span className="company-name">{fancyInstitutionName}</span>, <span className="location">{locationCity}</span>
 
 					{achievements && achievements.length > 0 ?
 						<ul className="bulleted">

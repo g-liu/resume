@@ -13,9 +13,8 @@ import resumeData from './resume_data';
 const App = (props) => {
   if (!resumeData) { return null; }
 
-  return [
-    <Header name={resumeData.meta.name} byline={resumeData.meta.byline} key="header" />,
-    <div id="main" key="main">
+  return (<div id="main">
+      <Header name={resumeData.meta.name} byline={resumeData.meta.byline} />
       <div id="left">
         <Contacts items={resumeData.meta.contacts} />
         <SideList listId="skills" title="Skills" items={resumeData.skills} />
@@ -28,8 +27,7 @@ const App = (props) => {
         <Educations items={resumeData.education} />
         <Projects projects={resumeData.projects} />
       </div>
-    </div>
-  ];
+    </div>);
 }
 
 ReactDOM.render(<App />, document.getElementById("resume-container"));
