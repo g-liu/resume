@@ -8,10 +8,15 @@ const Projects = (props) => {
       return null;
     }
     
-    return [<h3 key="title">Projects</h3>,
-	    projects.map((project, index) => {
-	      return <Project key={index} title={project.title} inProgress={project.is_in_progress} description={project.description} />;
-	    })];
+    return <section id="projects">
+	    	<h3 key="title">Projects</h3>
+
+	    	<div>
+			    {projects.map((project, index) => {
+			      return <Project key={index} title={project.title} inProgress={project.is_in_progress} description={project.description} />;
+			    })}
+		    </div>
+	  	</section>;
 }
 
 export default Projects;

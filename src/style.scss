@@ -115,6 +115,10 @@ ul.bulleted {
 	padding: .25in;
 	grid-column-start: 2;
 	grid-row-start: 2;
+
+	section + section {
+		margin-top: 1.5em;
+	}
 }
 
 span {
@@ -231,28 +235,10 @@ table {
 	padding: 0 .5em;
 }*/
 
-
-section.project {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	display: inline-block;
-	width: 49.5%; /* WHY CSS? */
-	border: none;
-	vertical-align: top;
-}
-.row section.project {
-	&:first-child {
-		padding-right: 1.5%;
-	}
-	
-	&:last-child {
-		padding-left: 1.5%;
-	}
-}
-
-#right h3:last-of-type ~ .row section.project h4 {
-	margin-top: 0em;
+#projects > div {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 0.5em
 }
 
 aside {

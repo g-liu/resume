@@ -12,7 +12,7 @@ class SideList extends React.Component {
   	if (!this.state.items || this.state.items.length === 0) {
   		return null;
   	}
-    return (<aside id="{this.state.id}">
+    return (<aside id={this.state.id}>
     	<h3>{this.state.title}</h3>
     	<ul>
 	    	{this.state.items.map((language, index) => {
