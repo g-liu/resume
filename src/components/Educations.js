@@ -2,15 +2,14 @@ import React from 'react';
 import Education from './Education';
 
 const Educations = (props) => {
-	const {items} = props
+	const {items} = props;
 	
 	if (!items || items.length === 0) { return null; }
 
 	return <section id="education">
 			<h3>Education</h3>
 
-			<table>
-				<thead></thead>
+			<table cellSpacing="0">
 				<tbody>
 					{items.map((item, index) => {
 						return <Education
@@ -23,7 +22,6 @@ const Educations = (props) => {
 							key={index} />
 					})}
 				</tbody>
-				<tfoot></tfoot>
 			</table>
 		</section>;
 }

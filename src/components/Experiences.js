@@ -9,8 +9,7 @@ const Experiences = (props) => {
 	return <section id="experiences">
 			<h3>Work experience</h3>
 
-			<table>
-				<thead></thead>
+			<table cellSpacing="0">
 				<tbody>
 					{items.map((item, index) => {
 						return <Experience
@@ -21,10 +20,10 @@ const Experiences = (props) => {
 							companyUrl={item.company_url}
 							location={item.location}
 							description={item.description}
+							displayShort={item.display_short}
 							key={index} />
 					})}
 				</tbody>
-				<tfoot></tfoot>
 			</table>
 		</section>;
 }

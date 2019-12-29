@@ -45,6 +45,10 @@ aside h3 {
 	margin-bottom: 0.25em;
 }
 
+a {
+	color: #910;
+}
+
 h4 {
 	font-size: 14px;
 	margin: 0 0 0.333em;
@@ -54,9 +58,6 @@ h4 {
 p, ul, span, code, tt, kbd, td {
 	font-size: 12px;
 	line-height: 1.4;
-}
-code {
-	font-family: 'Lucida Console', monospace;
 }
 
 ul.bulleted {
@@ -149,6 +150,10 @@ span {
 }
 
 table {
+	border-spacing: 0 0.5em;
+	margin-top: -0.5em;
+	margin-bottom: -0.5em;
+
 	.years {
 		width: 13%;
 		padding-right: 2%;
@@ -166,13 +171,6 @@ table {
 		}
 	}
 
-	.type {
-		text-align: right;
-		vertical-align: bottom;
-		color: #999;
-		font-size: x-small;
-	}
-
 	.job-details h4 {
 		display: inline;
 		margin: 0;
@@ -184,56 +182,14 @@ table {
 
 	tr.previous {
 		color: #555;
-		.job-title:after {
-			content: ",\00a0";
-		}
-
-		td {
-			padding: 0.25em 0;
-		}
-
-		h4 {
-			display: inline; /* want run-in but not supported */
-		}
 	}
 
 	td {
 		vertical-align: top;
 	}
 
-	p {
-		margin-top: 0.5em;
-		// margin-bottom: 0.5em;
-	}
+	p { margin: 0; }
 }
-
-/*#previous-work {
-	color: #262626;
-	font-style: italic;
-}
-#previous-work .job-title {
-	font-weight: 500;
-}
-#previous-work td.years {
-	white-space: nowrap;
-}
-#previous-work p {
-	display: inline;
-}
-#previous-work ul {
-	display: inline;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-#previous-work li {
-	display: inline;
-}
-#previous-work li:not(:last-child):after {
-	content: " •";
-	color: #262626;
-	padding: 0 .5em;
-}*/
 
 #projects > div {
 	display: grid;
@@ -256,11 +212,4 @@ table ul {
 aside p,
 section p {
 	margin-top: 0;
-}
-
-footer {
-	display: none;
-	padding-top: 1em;
-	font-size: x-small;
-	text-align: center;
 }

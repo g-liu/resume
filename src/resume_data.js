@@ -101,19 +101,36 @@ const resume_data = {
 		"date_start": "2015-01-05",
 		"date_end": "2016-06-10",
 		"description": "Prepare for and teach sections of 15-25 students, grade homework assignments and exams, and hold office hours for students.",
+		"display_short": true,
+	}, {
+		"title": "Webmaster",
+		"company": "Associated Students of the University of Washington",
+		"company_url": "https://asuw.org",
+		"location": "Seattle WA",
+		"date_start": "2013-12-01",
+		"date_end": "2014-06-01",
+		"description": "Maintain and develop web projects for the ASUW",
+		"display_short": true,
+	}, {
+		"title": "Programming Intern",
+		"company": "Seattle Publishing",
+		"company_url": "https://seattlepublishing.org",
+		"location": "Seattle WA",
+		"date_start": "2013-06-01",
+		"date_end": "2013-09-01",
+		"description": "Ruby on Rails migration and website redesign",
+		"display_short": true,
 	}],
 	"projects": [{
 		"title": "Odo proxy software",
 		"description": "Owned the redesign of Groupon's open-source proxy software. Rewrote significant portions of the Groupon front-end using Bootstrap framework, introducing usability features such as keyboard navigation.",
 		"is_in_progress": false
 	}, {
-		"title": "Periodic Table browser",
-		"description": "Allows tabular comparison of multiple elements. Currently rewriting in Angular JS. Originally, data stored as XML files, parsed and displayed with jQuery.",
-		"is_in_progress": true
+		"title": "PeaceTrees Vietnam project map",
+		"description": "Leverage MapBox, React, and Node to present interactive map of projects and landmine data from non-profit organization. Allows admin to update map via CSV upload through a secure backend."
 	}, {
-		"title": "KingFM schedule browser",
-		"description": "Angular app that scrapes 98.1 KING FM's website and displays programming schedule in a responsive, user-friendly interface.",
-		"is_in_progress": true
+		"title": "Periodic Table browser",
+		"description": "Develop Node-based web scraper to obtain data about periodic table elements, and leverage JS and jQuery to display data in interactive table."
 	}, {
 		"title": "This resume!",
 		"description": "Open-source template, written with React and data provided by a simple JSON file. Job-seekers can quickly create their own resume simply by editing the JSON!"
