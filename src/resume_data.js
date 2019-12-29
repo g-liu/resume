@@ -1,4 +1,4 @@
-{
+const resume_data = {
 	"meta": {
 		"name": "Geoffrey Liu",
 		"byline": "iOS engineer & web developer",
@@ -98,10 +98,9 @@
 		"company": "University of Washington CSE",
 		"company_url": "https://cse.uw.edu",
 		"location": "Seattle WA",
-		"description": "TBD",
 		"date_start": "2015-01-05",
 		"date_end": "2016-06-10",
-		"description": "Prepare for and teach sections of 15-25 students, grade homework assignments and exams, and hold office hours for students."
+		"description": "Prepare for and teach sections of 15-25 students, grade homework assignments and exams, and hold office hours for students.",
 	}],
 	"projects": [{
 		"title": "Odo proxy software",
@@ -119,4 +118,7 @@
 		"title": "This resume!",
 		"description": "Open-source template, written with React and data provided by a simple JSON file. Job-seekers can quickly create their own resume simply by editing the JSON!"
 	}]
-}
+};
+
+
+export default resume_data;
