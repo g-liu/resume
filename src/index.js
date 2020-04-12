@@ -17,9 +17,8 @@ const App = (props) => {
       <Header name={resumeData.meta.name} byline={resumeData.meta.byline} />
       <div id="left">
         <Contacts items={resumeData.meta.contacts} />
-        <SideList listId="skills" title="Skills" items={resumeData.skills} />
-        <SideList listId="coursework" title="Coursework" items={resumeData.coursework} />
         <SideList listId="languages" title="Languages" items={resumeData.languages} />
+        <SideList listId="skills" title="Skills" items={resumeData.skills} />
         <SideList listId="interests" title="Interests" items={resumeData.interests} />
       </div>
       <div id="right">

@@ -14,9 +14,6 @@ const resume_data = {
 		}, {
 			"type": "github",
 			"id": "g-liu"
-		}, {
-			"type": "twitter",
-			"id": "geo_liu"
 		}]
 	},
 	"education": [{
@@ -32,49 +29,56 @@ const resume_data = {
 			"Teaching assistant, ASUW webmaster, musician in UW Symphony"
 		]
 	}],
-	"coursework": [
-	    "Web programming",
-	    "Data structures",
-	    "Software engineering",
-	    "Databases",
-	    "Systems programming",
-	    "Graphics",
-	    "Introduction to HCI",
-	    "Artificial intelligence",
-	    "HW/SW interface",
-	    "Music theory",
-	    "Music history"
-	],
-	"skills": [
+	// "coursework": [
+	//     "Web programming",
+	//     "Data structures",
+	//     "Software engineering",
+	//     "Databases",
+	//     "Systems programming",
+	//     "Graphics",
+	//     "Introduction to HCI",
+	//     "Artificial intelligence",
+	//     "HW/SW interface",
+	//     "Music theory",
+	//     "Music history"
+	// ],
+	"languages": [
 		"Swift / Objective-C",
-		"UI/Unit testing",
 	    "JavaScript / ES6",
 	    "React / Angular / Node",
 	    "Java",
-	    "PHP / WordPress",
+	    "PHP",
 	    "HTML5 / CSS3",
-	    "C / C++",
 	    "Ruby on Rails",
-	    "Python"
+	    "Python",
+	    "C / C++",
 	],
-	"languages": [
-		"English",
-		"Chinese",
-		"French"
+	"skills": [
+		"Xcode",
+		"Jenkins CI",
+		"Quick/Nimble unit testing",
+		"XCUITest automation",
+		"JIRA",
+		"NPM / yarn / Cocoapods",
+		"GitHub Enterprise",
+		"Bash/Python scripting",
+		"IntelliJ",
+		"Eclipse",
+		"WordPress"
 	],
 	"interests": [
-    	"Teaching / speaking",
     	"UI/UX design",
     	"Mobile app development",
     	"Music performance",
-    	"Photography"
+    	"Photography",
+    	"Teaching / speaking"
 	],
 	"experiences": [{
 		"title": "iOS Engineer",
 		"company": "Groupon",
 		"company_url": "https://groupon.com",
 		"location": "Santa Clara CA & Seattle WA",
-		"description": "Owned the development of many features in the Groupon iOS consumer app, a top-25 App Store app. Wrote extensive unit test and UI automation suites. Advised managers on design and implementation decisions.",
+		"description": "Owned the development of over 20 features in the Groupon iOS app, supporting key business goals such as Groupon+ and Groupon Select. Contributed to a significant app-wide re-architecture of the deal page screens. Wrote extensive unit test and UI automation suites. Advised managers on design and implementation decisions.",
 		"date_start": "2017-04-01",
 		"date_end": null
 	}, {
@@ -127,13 +131,13 @@ const resume_data = {
 		"is_in_progress": false
 	}, {
 		"title": "PeaceTrees Vietnam project map",
-		"description": "Leverage MapBox, React, and Node to present interactive map of projects and landmine data from non-profit organization. Allows admin to update map via CSV upload through a secure backend."
+		"description": "Leverage MapBox, React, and Node to present interactive map of the non-profit's projects and landmine data from KML files. Allows map updates via uploads through a secure backend."
 	}, {
-		"title": "Periodic Table browser",
-		"description": "Develop Node-based web scraper to obtain data about periodic table elements, and leverage JS and jQuery to display data in interactive table."
+		"title": "Redwood Symphony new website",
+		"description": "Completely overhauled the organization's website in WordPress, with over 1,000 lines of custom PHP and JavaScript code. Created custom interactive components to display concert data in a consistent, reusable manner."
 	}, {
-		"title": "This resume!",
-		"description": "Open-source template, written with React and data provided by a simple JSON file. Job-seekers can quickly create their own resume simply by editing the JSON!"
+		"title": "Nagios alerts visualizer",
+		"description": "Created a full-stack solution to visualize and reduce unnecessary Nagios alerts by over 50% in several weeks. Leveraged multi-threaded web scraper and Bootstrap-based front-end for quick tabular visualization."
 	}]
 };
 

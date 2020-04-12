@@ -20,6 +20,7 @@ const Experiences = (props) => {
 							companyUrl={item.company_url}
 							location={item.location}
 							description={item.description}
+							is_shown={item.is_shown}
 							displayShort={item.display_short}
 							key={index} />
 					})}

@@ -2,9 +2,11 @@ import React from 'react';
 import {displayDate, fancifyNoun} from './helpers';
 
 const Experience = (props) => {
-	const {startDate, endDate, title, company, companyUrl, location, description, displayShort} = props;
+	const {startDate, endDate, title, company, companyUrl, location, description, is_shown, displayShort} = props;
 	const displayYears = displayDate(startDate, endDate);
 	const fancyCompanyName = fancifyNoun(company);
+
+	if (is_shown === false) return null;
 
 	return <tr className={displayShort && "previous"}>
 				<td className="years">{displayYears}</td>
