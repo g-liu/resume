@@ -71,14 +71,15 @@ const resume_data = {
     	"Mobile app development",
     	"Music performance",
     	"Photography",
-    	"Teaching / speaking"
+    	"Blogging",
+    	"Teaching / speaking",
 	],
 	"experiences": [{
 		"title": "iOS Engineer",
 		"company": "Groupon",
 		"company_url": "https://groupon.com",
 		"location": "Santa Clara CA & Seattle WA",
-		"description": "Owned the development of over 20 features in the Groupon iOS app, supporting key business goals such as Groupon+ and Groupon Select. Contributed to a significant app-wide re-architecture of the deal page screens. Wrote extensive unit test and UI automation suites. Advised managers on design and implementation decisions.",
+		"description": "Owned the development of over 20 features in the Groupon iOS app, supporting key business goals such as Groupon+ and Groupon Select. Wrote extensive unit test and UI automation suites for stability and regression tracking. Contributed to a significant app-wide re-architecture of the deal page screens. Advised managers on design and implementation decisions.",
 		"date_start": "2017-04-01",
 		"date_end": null
 	}, {
@@ -86,7 +87,7 @@ const resume_data = {
 		"company": "Groupon",
 		"company_url": "https://groupon.com",
 		"location": "Palo Alto CA",
-		"description": "Develop web-specific features of the Groupon Goods online presence. Leverage internal JavaScript framework for front-end UX and maintain browser automation tests.",
+		"description": "Develop web-specific features of the Groupon Goods online presence. Leverage internal JavaScript framework for front-end UX and maintain browser automation tests. Oversaw deployments on our custom deployment solution, and performed on-call duties as necessary.",
 		"date_start": "2016-07-25",
 		"date_end": "2017-03-31"
 	}, {
