@@ -99,6 +99,14 @@ ul.bulleted {
 	grid-template-rows: 1.6in auto;
 }
 
+#letter-content {
+	padding: .25in;
+	grid-column-start: 1;
+	grid-column-end: 999;
+
+	p{font-size:12pt;}
+}
+
 #left aside:first-child h3,
 #right h3:first-child {
 	margin-top: 0;

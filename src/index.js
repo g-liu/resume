@@ -10,7 +10,29 @@ import 'normalize.css/normalize.css';
 import './style.scss';
 import resumeData from './resume_data';
 
-const App = (props) => {
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+export default function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route path="/cover-letter">
+          <CoverLetter />
+        </Route>
+        <Route path="/">
+          <Resume />
+        </Route>
+      </Switch>
+    </Router>
+    )
+}
+
+const Resume = (props) => {
   if (!resumeData) { return null; }
 
   return (<div id="main">
@@ -27,6 +49,15 @@ const App = (props) => {
         <Projects projects={resumeData.projects} />
       </div>
     </div>);
+}
+
+const CoverLetter = (props) => {
+  return (<div id="main">
+      <Header name={resumeData.meta.name} byline={resumeData.meta.byline} />
+      <div id="letter-content">
+        
+      </div>
+      </div>)
 }
 
 ReactDOM.render(<App />, document.getElementById("resume-container"));

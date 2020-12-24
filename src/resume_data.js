@@ -1,7 +1,7 @@
 const resume_data = {
 	"meta": {
 		"name": "Geoffrey Liu",
-		"byline": "iOS engineer & web developer",
+		"byline": "Experienced iOS and web engineer",
 		"contacts": [{
 			"type": "email",
 			"id": "main@g-liu.com"
@@ -75,13 +75,21 @@ const resume_data = {
     	"Teaching / speaking",
 	],
 	"experiences": [{
-		"title": "iOS Engineer",
+		"title": "Senior iOS Engineer",
+		"company": "PayPal",
+		"company_url": "https://paypal.com",
+		"location": "Seattle WA (Remote)",
+		"description": "Contribute to the development of a brand new in-store loyalty experience. Built a new unit test / UI test framework for all app modules.",
+		"date_start": "2020-10-05",
+		"date_end": null,
+	}, {
+		"title": "Web / iOS Engineer",
 		"company": "Groupon",
 		"company_url": "https://groupon.com",
 		"location": "Santa Clara CA & Seattle WA",
-		"description": "Owned the development of over 20 features in the Groupon iOS app, supporting key business goals such as Groupon+ and Groupon Select. Wrote extensive unit test and UI automation suites for stability and regression tracking. Contributed to a significant app-wide re-architecture of the deal page screens. Advised managers on design and implementation decisions.",
+		"description": "Owned the development of over 25+ features in the Groupon iOS app and Groupon Goods web presence, supporting key business goals such as Groupon+ and Groupon Select. Wrote extensive unit test and UI automation suites for stability and regression tracking. Contributed to a significant app-wide re-architecture of the deal page screens. Advised managers on design and implementation decisions.",
 		"date_start": "2017-04-01",
-		"date_end": null
+		"date_end": "2020-09-23",
 	}, {
 		"title": "Web developer",
 		"company": "Groupon",
@@ -89,7 +97,8 @@ const resume_data = {
 		"location": "Palo Alto CA",
 		"description": "Develop web-specific features of the Groupon Goods online presence. Leverage internal JavaScript framework for front-end UX and maintain browser automation tests. Oversaw deployments on our custom deployment solution, and performed on-call duties as necessary.",
 		"date_start": "2016-07-25",
-		"date_end": "2017-03-31"
+		"date_end": "2017-03-31",
+		"is_shown": false,
 	}, {
 		"title": "Software Engineering Intern",
 		"company": "CDK Global",
@@ -125,6 +134,7 @@ const resume_data = {
 		"date_end": "2013-09-01",
 		"description": "Ruby on Rails migration and website redesign",
 		"display_short": true,
+		"is_shown": false,
 	}],
 	"projects": [{
 		"title": "Odo proxy software",
