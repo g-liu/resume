@@ -1,9 +1,11 @@
 import React from 'react';
 
 const Project = (props) => {
-  const {title, inProgress, description} = props;
+  const {title, isShown, inProgress, description} = props;
 
   if (!title) return null;
+
+  if (isShown === false) return null;
 
   return <article className="project">
     <h4>{title}</h4>

@@ -32,6 +32,7 @@ function displayDate(startDateString, endDateString, collapseCenturies=true) {
 
 /* makes fancy the "OF" and "AND" words of a proper noun */
 function fancifyNoun(noun) {
+	if (noun == null || noun.length == 0) { return noun; }
 	return noun.split(' ').map((token, index, tokens) => {
 		const isLastToken = index === tokens.length - 1;
 		if (token.toUpperCase() === 'OF' || token.toUpperCase() === 'AND') {
