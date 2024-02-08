@@ -1,9 +1,13 @@
 import React from 'react';
 
 const Plug = (props) => {
+	const {content} = props;
+
+	if (!content || content.length === 0) { return null; }
+
 	return (
 		<section id="plug">
-			<p>This resume made with React! See how at g-liu.com/resume</p>
+			<p>{content}</p>
 		</section>
 	);
 }

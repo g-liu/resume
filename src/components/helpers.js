@@ -15,18 +15,24 @@ function ArrayToList({className, items}) {
 }
 
 /* startDateString, endDateString are in YYYY-MM-DD format */
-function displayDate(startDateString, endDateString, collapseCenturies=true) {
+function displayDate(startDateString, endDateString, displayShort=false, collapseCenturies=true) {
 	const startDate = moment(startDateString, 'YYYY-MM-DD');
 
 	if (endDateString == null) {
 		return (
-			<span>since<br /><span className="months">{startDate.format('MMM')}</span> {startDate.format('YYYY')}</span>
+			<span><span className="date-modifier">since</span><br /><span className="months">{startDate.format('MMM')}</span> {startDate.format('YYYY')}</span>
 		);
 	}
 
 	const endDate = moment(endDateString, 'YYYY-MM-DD');
 
 	if (startDate.isSame(endDate, 'year')) {
+		if (displayShort) {
+			// only display year, no months
+			return (
+				<span>{startDate.format('YYYY')}</span>
+			);
+		}
 		return (
 			<span><span className="months">{startDate.format('MMM')}-{endDate.format('MMM')}</span> {startDate.format('YYYY')}</span>
 		);

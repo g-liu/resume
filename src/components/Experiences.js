@@ -2,12 +2,14 @@ import React from 'react';
 import Experience from './Experience';
 
 const Experiences = (props) => {
-	const {items} = props;
+	const {experiences} = props;
+
+	const {items, title} = experiences
 	
 	if (!items || items.length === 0) { return null; }
 
 	return <section id="experiences">
-			<h3>Work experience</h3>
+			<h3>{title}</h3>
 
 			<table cellSpacing="0">
 				<tbody>

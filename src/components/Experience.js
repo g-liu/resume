@@ -3,7 +3,7 @@ import {displayDate, fancifyNoun} from './helpers';
 
 const Experience = (props) => {
 	const {startDate, endDate, title, company, companyUrl, location, description, is_shown, displayShort} = props;
-	const displayYears = displayDate(startDate, endDate);
+	const displayYears = displayDate(startDate, endDate, displayShort);
 	const fancyCompanyName = fancifyNoun(company);
 	const fancyLocation = fancifyNoun(location);
 

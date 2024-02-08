@@ -118,6 +118,13 @@ ul.bulleted {
 	border-right: 1.5px solid #ebebeb;
 	grid-column-start: 1;
 	grid-row-start: 2;
+	display: flex;
+	flex-direction: column;
+
+	aside {
+		text-align: right;
+		padding-left: 1em;
+	}
 }
 
 #right {
@@ -171,6 +178,10 @@ table {
 		width: 13%;
 		padding-right: 2%;
 		vertical-align: top;
+
+		.date-modifier {
+			color: #555;
+		}
 		
 		.months {
 			font-size: 11px;
@@ -253,13 +264,13 @@ table {
 
 #plug {
 	text-align: right;
-	margin-top: 4em;
+	margin-top: auto; // aligns to bottom
+	padding-left: 1em;
 
-	p { opacity: 33.3333%; }
-}
-
-aside {
-	text-align: right;
+	p { 
+		opacity: 33.3333%;
+		// margin-bottom: 0;
+	}
 }
 
 aside ul,

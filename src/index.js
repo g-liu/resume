@@ -43,11 +43,11 @@ const Resume = (props) => {
         <SideList listId="languages" title="Languages" items={resumeData.languages} />
         <SideList listId="skills" title="Skills" items={resumeData.skills} />
         <SideList listId="interests" title="Interests" items={resumeData.interests} />
-        <Plug />
+        <Plug content={resumeData.plug.content} />
       </div>
       <div id="right">
-        <Experiences items={resumeData.experiences} />
-        <Educations items={resumeData.education} />
+        <Experiences experiences={resumeData.experiences} />
+        <Educations educations={resumeData.education} />
         <Projects projects={resumeData.projects} />
       </div>
     </div>);
