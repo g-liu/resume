@@ -1,7 +1,7 @@
 const resume_data = {
 	"meta": {
 		"name": "Geoffrey Liu",
-		"byline": "Experienced iOS and web engineer",
+		"byline": "Experienced iOS engineer, web developer, and musician",
 		"contacts": [{
 			"type": "email",
 			"id": "main@g-liu.com"
@@ -153,31 +153,34 @@ const resume_data = {
 		"date_end": null,
 		"display_short": true,
 	}],
-	"projects": [{
-		"title": "Odo proxy software",
-		"description": "Owned the redesign of Groupon's open-source proxy software. Rewrote significant portions of the Groupon front-end using Bootstrap framework, introducing usability features such as keyboard navigation.",
-		"project_url": "https://github.com/groupon/odo",
-		"start_date": "2019-01-01",
-		"end_date": "2019-12-31",
-		"technologies": ["JavaScript", "Bootstrap", "Hotkeys", "Unit testing"],
-	}, {
-		"title": "PeaceTrees Vietnam project map",
-		"description": "Leverage MapBox, React, and Node to present interactive map of the non-profit's projects and landmine data from KML files. Allows map updates via uploads through a secure backend.",
-		"start_date": "2019-10-01",
-		"end_date": "2019-10-31",
-	}, {
-		"title": "Redwood Symphony new website",
-		"description": "Completely overhauled the organization's website in WordPress, with over 1,000 lines of custom PHP and JavaScript code. Created custom interactive components to display concert data in a consistent, reusable manner.",
-		"start_date": "2020-06-01",
-		"end_date": "2021-03-01",
-	}, {
-		"title": "Nagios alerts visualizer",
-		"description": "Created a full-stack solution to visualize and reduce unnecessary Nagios alerts by over 50% in several weeks. Leveraged multi-threaded web scraper and Bootstrap-based front-end for quick tabular visualization.",
-		"start_date": "2017-05-01",
-		"end_date": "2017-06-01",
-		"is_hidden": true,
-	}],
-	"projects_display_short": true,
+	"projects": {
+		"display_short": true,
+		"heading": "Projects",
+		"items": [{
+			"title": "Odo proxy software",
+			"description": "Owned the redesign of Groupon's open-source proxy software. Rewrote significant portions of the Groupon front-end using Bootstrap framework, introducing usability features such as keyboard navigation.",
+			"project_url": "https://github.com/groupon/odo",
+			"start_date": "2019-01-01",
+			"end_date": "2019-12-31",
+			"technologies": ["JavaScript", "Bootstrap", "Hotkeys", "Unit testing"],
+		}, {
+			"title": "PeaceTrees Vietnam project map",
+			"description": "Leverage MapBox, React, and Node to present interactive map of the non-profit's projects and landmine data from KML files. Allows map updates via uploads through a secure backend.",
+			"start_date": "2019-10-01",
+			"end_date": "2019-10-31",
+		}, {
+			"title": "Redwood Symphony new website",
+			"description": "Completely overhauled the organization's website in WordPress, with over 1,000 lines of custom PHP and JavaScript code. Created custom interactive components to display concert data in a consistent, reusable manner.",
+			"start_date": "2020-06-01",
+			"end_date": "2021-03-01",
+		}, {
+			"title": "Nagios alerts visualizer",
+			"description": "Created a full-stack solution to visualize and reduce unnecessary Nagios alerts by over 50% in several weeks. Leveraged multi-threaded web scraper and Bootstrap-based front-end for quick tabular visualization.",
+			"start_date": "2017-05-01",
+			"end_date": "2017-06-01",
+			"is_hidden": true,
+		}]
+	}
 };
 
 

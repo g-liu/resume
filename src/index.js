@@ -46,7 +46,7 @@ const Resume = (props) => {
       <div id="right">
         <Experiences items={resumeData.experiences} />
         <Educations items={resumeData.education} />
-        <Projects projects={resumeData.projects} displayShort={resumeData.projects_display_short} />
+        <Projects projects={resumeData.projects} />
       </div>
     </div>);
 }

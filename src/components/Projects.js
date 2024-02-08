@@ -2,17 +2,18 @@ import React from 'react';
 import Project from './Project';
 
 const Projects = (props) => {
-	const {projects, displayShort} = props;
+	const {projects} = props;
+	const {items, heading, display_short} = projects
 
-	if (!projects || projects.length === 0) {
+	if (!items || items.length === 0) {
       return null;
     }
     
-    return <section id="projects" className={displayShort ? "short" : "long"}>
-	    	<h3 key="title">Projects</h3>
+    return <section id="projects" className={display_short ? "short" : "long"}>
+	    	<h3 key="title">{heading}</h3>
 
 	    	<>
-			    {projects.map((project, index) => {
+			    {items.map((project, index) => {
 			      return <Project key={index} isHidden={project.is_hidden} title={project.title} url={project.project_url} startDate={project.start_date} endDate={project.end_date} description={project.description} technologies={project.technologies} />;
 			    })}
 		    </>
