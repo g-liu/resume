@@ -19,6 +19,16 @@ header {
 	grid-column-end: 3;
 	grid-row-start: 1;
 	grid-row-end: 2;
+	position: relative;
+
+	.last-modified {
+		position: absolute;
+	    font-size: x-small;
+	    color: white;
+	    opacity: 25%;
+	    right: 1.5em;
+	    top: 1.5em;
+	}
 
 	h1,
 	h2 {

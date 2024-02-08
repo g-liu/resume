@@ -38,7 +38,9 @@ function displayDate(startDateString, endDateString, displayShort=false, collaps
 		);
 	}
 
-	if (collapseCenturies) {
+	const isSameCentury = areDatesInSameCentury(startDate, endDate);
+
+	if (isSameCentury && collapseCenturies) {
 		return (
 			<span>{startDate.format('YYYY')}-{endDate.format('YY')}</span>
 		)
@@ -47,6 +49,26 @@ function displayDate(startDateString, endDateString, displayShort=false, collaps
 	return (
 		<span>{startDate.format('YYYY')} <span className="sm-caps" style={{position: 'relative', top: '-1px'}}>to</span> {endDate.format('YYYY')}</span>
 	);
+}
+
+// Function to check if two moment dates are in the same century
+function areDatesInSameCentury(date1, date2) {
+  // Get the century of each date
+  const century1 = Math.ceil(date1.year() / 100);
+  const century2 = Math.ceil(date2.year() / 100);
+
+  // Check if the centuries are equal
+  return century1 === century2;
+}
+
+class LastModifiedDate extends React.Component {
+  render() {
+    const formattedDate = moment().format('MMM. YYYY');
+
+    return (
+      <div className="last-modified">Last updated {formattedDate}</div>
+    );
+  }
 }
 
 /* makes fancy the "OF" and "AND" words of a proper noun, also any mention of remote, to be greyed */
@@ -72,4 +94,4 @@ function linkify(word, url) {
 	return <a href={url}>{word}</a>
 }
 
-export {ArrayToList, displayDate, fancifyNoun, linkify};
+export {ArrayToList, displayDate, fancifyNoun, LastModifiedDate, linkify};

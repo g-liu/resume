@@ -81,7 +81,7 @@ const resume_data = {
 	"experiences": {
 		"title": "Professional experience",
 		"items": [{
-			"title": "Senior Software Engineer",
+			"title": "Senior software engineer",
 			"company": "PayPal",
 			"company_url": "https://paypal.com",
 			"location": "Seattle WA (remote)",
@@ -97,7 +97,7 @@ const resume_data = {
 			"date_start": "2020-09-01",
 			"date_end": null,
 		}, {
-			"title": "Web / iOS Engineer",
+			"title": "Web / iOS engineer",
 			"company": "Groupon",
 			"company_url": "https://groupon.com",
 			"location": "Santa Clara CA & Seattle WA",
@@ -114,7 +114,7 @@ const resume_data = {
 			"date_end": "2017-03-31",
 			"is_shown": false,
 		}, {
-			"title": "Software Engineering Intern",
+			"title": "Software engineering intern",
 			"company": "CDK Global",
 			"company_url": "https://www.cdkglobal.com",
 			"location": "Seattle WA",
@@ -123,7 +123,7 @@ const resume_data = {
 			"date_end": "2015-09-04",
 			"display_short": true,
 		}, {
-			"title": "Teaching Assistant",
+			"title": "Teaching assistant",
 			"company": "University of Washington CSE",
 			"company_url": "https://cse.uw.edu",
 			"location": "Seattle WA",
