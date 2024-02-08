@@ -26,8 +26,8 @@ header {
 	    font-size: x-small;
 	    color: white;
 	    opacity: 25%;
-	    right: 1.5em;
-	    top: 1.5em;
+	    right: 0.25in;
+	    top: 0.25in;
 	}
 
 	h1,
@@ -243,7 +243,7 @@ table {
 
 	&.short {
 		.project {
-			margin-bottom: 0.5em;
+			&:not(:last-child) { margin-bottom: 0.45em; }
 
 			h2, h3, h4, h5, h6 {
 				display: inline;
@@ -278,8 +278,9 @@ table {
 	padding-left: 1em;
 
 	p { 
-		opacity: 33.3333%;
-		// margin-bottom: 0;
+		opacity: 25%;
+		font-size: x-small;
+		margin-bottom: 0;
 	}
 }
 

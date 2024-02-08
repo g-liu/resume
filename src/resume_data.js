@@ -26,9 +26,9 @@ const resume_data = {
 			"degrees": ["B.S. Computer Science", "Minor in Music"],
 			"achievements": [
 				"Direct admission into Computer Science, 2012",
-				"Dean's List candidate, 2012―2016",
-				"3.73 overall GPA",
-				"Teaching assistant, ASUW webmaster, musician in UW Symphony"
+				"Dean's List candidate, 2012―16",
+				"Teaching assistant 2014―16; musician in UW Symphony 2012―16",
+				"3.73 overall cumulative GPA",
 			]
 		}],
 	},
@@ -93,7 +93,7 @@ const resume_data = {
 			"company": "The Key to Change",
 			"company_url": "https://keytochangestudio.org",
 			"location": "Renton WA",
-			"description": "Provide instruction to group classes and individual students in a socioeconomically diverse music studio. Accompany students on piano for events, festivals, and recitals. Address technical needs when necessary.",
+			"description": "Provide instruction to group classes and individual students in a socioeconomically diverse music studio. Write lesson plans, classroom expectations, and student progress reports for each trimester. Accompany students on piano for events, festivals, and recitals. Address technical needs when necessary.",
 			"date_start": "2020-09-01",
 			"date_end": null,
 		}, {
