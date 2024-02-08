@@ -152,33 +152,53 @@ const resume_data = {
 		"date_start": "2010-01-01",
 		"date_end": null,
 		"display_short": true,
+		"is_shown": false,
 	}],
 	"projects": {
 		"display_short": true,
 		"heading": "Projects",
 		"items": [{
+			"title": "HowManyCities iOS clone",
+			"description": "iOS version of the famous city-guessing quiz where you have to name every city in a given part of the world",
+			"end_date": "2022-05-22",
+			"start_date": "2022-03-29",
+			"project_url": "https://github.com/g-liu/HowManyCities/",
+			"technologies": ["MapKit/MapCache", "SwifterSwift", "Unit/UI testing"],
+
+		}, {
+			"title": "Wordle With Friends",
+			"description": "A version of Wordle that allows for collaborative play - one player enters a word to guess and the other player tries to guess it.",
+			"project_url": "https://github.com/g-liu/WordleWithFriends/",
+			"end_date": "2022-03-22",
+			"start_date": "2022-01-15",
+			"technologies": ["Swift 5", "MVVM", "XCUI Tests", "UIKit custom keyboard",],
+		}, {
 			"title": "Odo proxy software",
 			"description": "Owned the redesign of Groupon's open-source proxy software. Rewrote significant portions of the Groupon front-end using Bootstrap framework, introducing usability features such as keyboard navigation.",
 			"project_url": "https://github.com/groupon/odo",
 			"start_date": "2019-01-01",
 			"end_date": "2019-12-31",
 			"technologies": ["JavaScript", "Bootstrap", "Hotkeys", "Unit testing"],
+			"is_hidden": true,
 		}, {
 			"title": "PeaceTrees Vietnam project map",
 			"description": "Leverage MapBox, React, and Node to present interactive map of the non-profit's projects and landmine data from KML files. Allows map updates via uploads through a secure backend.",
 			"start_date": "2019-10-01",
 			"end_date": "2019-10-31",
+			"technologies": ["MapBox", "React", "Node"]
 		}, {
 			"title": "Redwood Symphony new website",
 			"description": "Completely overhauled the organization's website in WordPress, with over 1,000 lines of custom PHP and JavaScript code. Created custom interactive components to display concert data in a consistent, reusable manner.",
 			"start_date": "2020-06-01",
 			"end_date": "2021-03-01",
+			"technologies": ["WordPress", "ACF", "Custom plugins", "CSS3"]
 		}, {
 			"title": "Nagios alerts visualizer",
 			"description": "Created a full-stack solution to visualize and reduce unnecessary Nagios alerts by over 50% in several weeks. Leveraged multi-threaded web scraper and Bootstrap-based front-end for quick tabular visualization.",
 			"start_date": "2017-05-01",
 			"end_date": "2017-06-01",
-			"is_hidden": true,
+			"technologies": ["Bootstrap", "Web scraping", "multi-threading"],
+			// "is_hidden": true,
 		}]
 	}
 };

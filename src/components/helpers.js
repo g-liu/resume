@@ -59,4 +59,11 @@ function fancifyNoun(noun) {
 	});
 }
 
-export {ArrayToList, displayDate, fancifyNoun};
+/* Wraps the given string in a url, or returns the string verbatim if url is empty or null */
+function linkify(word, url) {
+	if (!url || url.length === 0) { return word; }
+
+	return <a href={url}>{word}</a>
+}
+
+export {ArrayToList, displayDate, fancifyNoun, linkify};

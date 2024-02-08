@@ -1,9 +1,9 @@
 import React from 'react';
 import moment from 'moment';
-import {ArrayToList} from './helpers'
+import {ArrayToList, linkify} from './helpers'
 
 const Project = (props) => {
-  const {title, isHidden, endDate, description, technologies} = props;
+  const {title, isHidden, endDate, description, url, technologies} = props;
 
   if (isHidden) return null;
 
@@ -13,7 +13,7 @@ const Project = (props) => {
   if (!title) return null;
 
   return (<article className="project">
-    <h4>{title}</h4>
+    <h4>{linkify(title, url)}</h4>
     <ArrayToList className="technologies" items={technologies} />
     <p className="description">{inProgress ? <span className="in-progress">(In progress)</span> : ''} {description}</p>
   </article>);
