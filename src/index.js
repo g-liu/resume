@@ -6,6 +6,7 @@ import Contacts from './components/Contacts'
 import Experiences from './components/Experiences'
 import Educations from './components/Educations'
 import Projects from './components/Projects'
+import Plug from './components/Plug'
 import 'normalize.css/normalize.css';
 import './style.scss';
 import resumeData from './resume_data';
@@ -14,7 +15,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  // Link
 } from "react-router-dom";
 
 export default function App() {
@@ -42,10 +43,11 @@ const Resume = (props) => {
         <SideList listId="languages" title="Languages" items={resumeData.languages} />
         <SideList listId="skills" title="Skills" items={resumeData.skills} />
         <SideList listId="interests" title="Interests" items={resumeData.interests} />
+        <Plug content={resumeData.plug.content} />
       </div>
       <div id="right">
-        <Experiences items={resumeData.experiences} />
-        <Educations items={resumeData.education} />
+        <Experiences experiences={resumeData.experiences} />
+        <Educations educations={resumeData.education} />
         <Projects projects={resumeData.projects} />
       </div>
     </div>);

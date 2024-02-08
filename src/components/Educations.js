@@ -2,12 +2,14 @@ import React from 'react';
 import Education from './Education';
 
 const Educations = (props) => {
-	const {items} = props;
+	const {educations} = props;
+
+	const {items, title} = educations;
 	
 	if (!items || items.length === 0) { return null; }
 
 	return <section id="education">
-			<h3>Education</h3>
+			<h3>{title}</h3>
 
 			<table cellSpacing="0">
 				<tbody>
