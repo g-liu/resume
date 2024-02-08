@@ -6,6 +6,7 @@ import Contacts from './components/Contacts'
 import Experiences from './components/Experiences'
 import Educations from './components/Educations'
 import Projects from './components/Projects'
+import Plug from './components/Plug'
 import 'normalize.css/normalize.css';
 import './style.scss';
 import resumeData from './resume_data';
@@ -42,6 +43,7 @@ const Resume = (props) => {
         <SideList listId="languages" title="Languages" items={resumeData.languages} />
         <SideList listId="skills" title="Skills" items={resumeData.skills} />
         <SideList listId="interests" title="Interests" items={resumeData.interests} />
+        <Plug />
       </div>
       <div id="right">
         <Experiences items={resumeData.experiences} />
