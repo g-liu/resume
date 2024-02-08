@@ -187,11 +187,12 @@ const resume_data = {
 			"technologies": ["JavaScript", "Bootstrap", "Hotkeys", "Unit testing"],
 			"is_hidden": true,
 		}, {
-			"title": "PeaceTrees Vietnam project map",
-			"description": "Leverage MapBox, React, and Node to present interactive map of the non-profit's projects and landmine data from KML files. Allows map updates via uploads through a secure backend.",
+			"title": "PeaceTrees Vietnam map",
+			"description": "Leverage MapBox, ReactJS, and Node to present interactive map of the non-profit's projects and landmine data from KML files. Allows map updates via uploads through a secure backend.",
 			"start_date": "2019-10-01",
 			"end_date": "2019-10-31",
-			"technologies": ["MapBox", "React", "Node"]
+			"project_url": "https://github.com/SeattleGiveCamp/SGC2019_PeaceTreesVietnam",
+			"technologies": ["MapBox", "KML", "ExpressJS", "ReactJS", "Node"]
 		}, {
 			"title": "Redwood Symphony new site",
 			"description": "Completely overhauled the organization's website in WordPress, with over 1,000 lines of custom PHP and JavaScript code. Created custom interactive components to display concert data in a consistent, reusable manner.",
