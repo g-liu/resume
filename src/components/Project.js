@@ -3,7 +3,9 @@ import moment from 'moment';
 import {ArrayToList} from './helpers'
 
 const Project = (props) => {
-  const {title, startDate, endDate, displayShort, description, technologies} = props;
+  const {title, isHidden, endDate, description, technologies} = props;
+
+  if (isHidden) return null;
 
   const endDateMoment = moment(endDate, 'YYYY-MM-DD');
   const inProgress = endDate == null || (moment() < endDateMoment);
@@ -12,8 +14,8 @@ const Project = (props) => {
 
   return (<article className="project">
     <h4>{title}</h4>
-    <p>{inProgress ? <span className="in-progress">(In progress)</span> : ''} {description}</p>
-    {displayShort ? <ArrayToList items={technologies} /> : ''}
+    <ArrayToList className="technologies" items={technologies} />
+    <p className="description">{inProgress ? <span className="in-progress">(In progress)</span> : ''} {description}</p>
   </article>);
 }
 

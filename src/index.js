@@ -14,7 +14,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  // Link
 } from "react-router-dom";
 
 export default function App() {
@@ -46,7 +46,7 @@ const Resume = (props) => {
       <div id="right">
         <Experiences items={resumeData.experiences} />
         <Educations items={resumeData.education} />
-        <Projects projects={resumeData.projects} />
+        <Projects projects={resumeData.projects} displayShort={resumeData.projects_display_short} />
       </div>
     </div>);
 }

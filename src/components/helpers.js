@@ -1,13 +1,13 @@
 import React from 'react';
 import moment from 'moment';
 
-function ArrayToList({ items }) {
-	if (!items || items.length == 0) {
+function ArrayToList({className, items}) {
+	if (!items || items.length === 0) {
 		return null;
 	}
 
 	return (
-		<ul>
+		<ul className={className}>
 			{items.map((item, index) => (
 				<li key={index}>{item}</li>
 			))}
@@ -45,7 +45,7 @@ function displayDate(startDateString, endDateString, collapseCenturies=true) {
 
 /* makes fancy the "OF" and "AND" words of a proper noun, also any mention of remote, to be greyed */
 function fancifyNoun(noun) {
-	if (noun == null || noun.length == 0) { return noun; }
+	if (noun === null || noun.length === 0) { return noun; }
 
 	return noun.split(' ').map((token, index, tokens) => {
 		const isLastToken = index === tokens.length - 1;

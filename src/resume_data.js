@@ -159,7 +159,7 @@ const resume_data = {
 		"project_url": "https://github.com/groupon/odo",
 		"start_date": "2019-01-01",
 		"end_date": "2019-12-31",
-		"technologies": [],
+		"technologies": ["JavaScript", "Bootstrap", "Hotkeys", "Unit testing"],
 	}, {
 		"title": "PeaceTrees Vietnam project map",
 		"description": "Leverage MapBox, React, and Node to present interactive map of the non-profit's projects and landmine data from KML files. Allows map updates via uploads through a secure backend.",
@@ -175,6 +175,7 @@ const resume_data = {
 		"description": "Created a full-stack solution to visualize and reduce unnecessary Nagios alerts by over 50% in several weeks. Leveraged multi-threaded web scraper and Bootstrap-based front-end for quick tabular visualization.",
 		"start_date": "2017-05-01",
 		"end_date": "2017-06-01",
+		"is_hidden": true,
 	}],
 	"projects_display_short": true,
 };

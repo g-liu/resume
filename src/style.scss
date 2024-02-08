@@ -204,10 +204,50 @@ table {
 	p { margin: 0; }
 }
 
-#projects > div {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 0.5em
+#projects {
+	.technologies {
+		display: inline;
+		padding: 0em;
+		color: #555;
+
+		li {
+			display: inline;
+
+			&:not(:first-child):before {
+				content: '\00a0\00a0•\00a0\00a0';
+			}
+		}
+	}
+
+	&.short {
+		.project {
+			margin-bottom: 0.5em;
+
+			h2, h3, h4, h5, h6 {
+				display: inline;
+
+				&:after {
+					content: '\00a0\00a0\00a0';
+				}
+			}
+
+			.description {
+				display: none;
+			}
+		}
+	}
+
+	&.long {
+		.project {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-column-gap: 0.5em;
+
+			.technologies {
+				display: none;
+			}
+		}
+	}
 }
 
 aside {
