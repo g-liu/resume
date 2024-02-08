@@ -136,6 +136,11 @@ span {
 		font-variant: small-caps;
 	}
 
+	&.sm {
+		font-size: x-small;
+		color: #999;
+	}
+
 	&.fa {
 		width: 1em;
 		margin-left: 1px;
@@ -153,7 +158,7 @@ span {
 	}
 
 	&.location {
-		color: #555;
+		color: #444;
 	}
 }
 

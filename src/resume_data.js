@@ -57,7 +57,8 @@ const resume_data = {
 		"Xcode",
 		"Jenkins CI",
 		"Quick/Nimble unit testing",
-		"XCUITest automation",
+		"iOS UI Test automation",
+		"Web testing automation",
 		"JIRA",
 		"NPM / yarn / Cocoapods",
 		"GitHub Enterprise",
@@ -68,19 +69,27 @@ const resume_data = {
 	],
 	"interests": [
     	"UI/UX design",
-    	"Mobile app development",
-    	"Music performance",
-    	"Photography",
-    	"Blogging",
+    	"Foreign languages",
+    	"Music education",
     	"Teaching / speaking",
+    	"Photography",
+    	"Architecture / interior design"
 	],
 	"experiences": [{
-		"title": "Senior iOS Engineer",
+		"title": "Senior Software Engineer",
 		"company": "PayPal",
 		"company_url": "https://paypal.com",
-		"location": "Seattle WA (Remote)",
-		"description": "Contribute to the development of a brand new in-store loyalty experience. Built a new unit test / UI test framework for all app modules.",
+		"location": "Seattle WA (remote)",
+		"description": "Constantly developed new user-facing experiences across the PayPal iOS app in Loyalty, Rewards, and Shopping; as well as addressing technical debt, release, and on-call needs. Contributed to a major redesign of the app in late 2023, ensuring quality of code through code reviews, unit, UI, regression, and snapshot testing; and daily collaboration with QA, managers, design, and product teams. Hosted knowledge sharing sessions through the organization to encourage other teams to adopt best practices in software development.",
 		"date_start": "2020-10-05",
+		"date_end": "2024-01-30",
+	}, {
+		"title": "Violin/viola instructor",
+		"company": "The Key to Change",
+		"company_url": "https://keytochangestudio.org",
+		"location": "Renton WA",
+		"description": "Provide instruction to group classes and individual students in a socioeconomically diverse music studio. Accompany students on piano for events, festivals, and recitals. Address technical needs when necessary.",
+		"date_start": "2020-09-01",
 		"date_end": null,
 	}, {
 		"title": "Web / iOS Engineer",
@@ -106,7 +115,8 @@ const resume_data = {
 		"location": "Seattle WA",
 		"description": "Add functionality to existing Angular JS mobile app to allow car dealers to manage their incentives. Integrated with CDK's in-house REST APIs, wrote extensive tests. Added push notifications through Pushwoosh.",
 		"date_start": "2015-06-15",
-		"date_end": "2015-09-04"
+		"date_end": "2015-09-04",
+		"display_short": true,
 	}, {
 		"title": "Teaching Assistant",
 		"company": "University of Washington CSE",
@@ -135,21 +145,38 @@ const resume_data = {
 		"description": "Ruby on Rails migration and website redesign",
 		"display_short": true,
 		"is_shown": false,
+	}, {
+		"title": "Freelance web developer",
+		"company": "Self-employed",
+		"location": "Seattle WA",
+		"date_start": "2010-01-01",
+		"date_end": null,
+		"display_short": true,
 	}],
 	"projects": [{
 		"title": "Odo proxy software",
 		"description": "Owned the redesign of Groupon's open-source proxy software. Rewrote significant portions of the Groupon front-end using Bootstrap framework, introducing usability features such as keyboard navigation.",
-		"is_in_progress": false
+		"project_url": "https://github.com/groupon/odo",
+		"start_date": "2019-01-01",
+		"end_date": "2019-12-31",
+		"technologies": [],
 	}, {
 		"title": "PeaceTrees Vietnam project map",
-		"description": "Leverage MapBox, React, and Node to present interactive map of the non-profit's projects and landmine data from KML files. Allows map updates via uploads through a secure backend."
+		"description": "Leverage MapBox, React, and Node to present interactive map of the non-profit's projects and landmine data from KML files. Allows map updates via uploads through a secure backend.",
+		"start_date": "2019-10-01",
+		"end_date": "2019-10-31",
 	}, {
 		"title": "Redwood Symphony new website",
-		"description": "Completely overhauled the organization's website in WordPress, with over 1,000 lines of custom PHP and JavaScript code. Created custom interactive components to display concert data in a consistent, reusable manner."
+		"description": "Completely overhauled the organization's website in WordPress, with over 1,000 lines of custom PHP and JavaScript code. Created custom interactive components to display concert data in a consistent, reusable manner.",
+		"start_date": "2020-06-01",
+		"end_date": "2021-03-01",
 	}, {
 		"title": "Nagios alerts visualizer",
-		"description": "Created a full-stack solution to visualize and reduce unnecessary Nagios alerts by over 50% in several weeks. Leveraged multi-threaded web scraper and Bootstrap-based front-end for quick tabular visualization."
-	}]
+		"description": "Created a full-stack solution to visualize and reduce unnecessary Nagios alerts by over 50% in several weeks. Leveraged multi-threaded web scraper and Bootstrap-based front-end for quick tabular visualization.",
+		"start_date": "2017-05-01",
+		"end_date": "2017-06-01",
+	}],
+	"projects_display_short": true,
 };
 
 

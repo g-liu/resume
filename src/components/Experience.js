@@ -5,6 +5,7 @@ const Experience = (props) => {
 	const {startDate, endDate, title, company, companyUrl, location, description, is_shown, displayShort} = props;
 	const displayYears = displayDate(startDate, endDate);
 	const fancyCompanyName = fancifyNoun(company);
+	const fancyLocation = fancifyNoun(location);
 
 	if (is_shown === false) return null;
 
@@ -13,7 +14,7 @@ const Experience = (props) => {
 				<td className="job-details">
 					<h4>{title}</h4>
 					<span className="company-name"><a href={companyUrl}>{fancyCompanyName}</a></span>,&nbsp;
-					<span className="location">{location}</span>
+					<span className="location">{fancyLocation}</span>
 				
 					{!displayShort && <p>{description}</p>}
 				</td>

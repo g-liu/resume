@@ -13,7 +13,7 @@ const Projects = (props) => {
 
 	    	<div>
 			    {projects.map((project, index) => {
-			      return <Project key={index} title={project.title} inProgress={project.is_in_progress} description={project.description} />;
+			      return <Project key={index} title={project.title} url={project.project_url} startDate={project.start_date} endDate={project.end_date} description={project.description} technologies={project.technologies} />;
 			    })}
 		    </div>
 	  	</section>;
