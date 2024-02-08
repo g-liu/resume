@@ -20,7 +20,7 @@ const resume_data = {
 		"date_start": "2012-09-26",
 		"date_end": "2016-06-10",
 		"institution": "University of Washington",
-		"location_city": "Seattle",
+		"location_city": "Seattle WA",
 		"degrees": ["B.S. Computer Science", "Minor in Music"],
 		"achievements": [
 			"Direct admission into Computer Science, 2012",
@@ -97,7 +97,7 @@ const resume_data = {
 		"company_url": "https://groupon.com",
 		"location": "Santa Clara CA & Seattle WA",
 		"description": "Owned the development of over 25+ features in the Groupon iOS app and Groupon Goods web presence, supporting key business goals such as Groupon+ and Groupon Select. Wrote extensive unit test and UI automation suites for stability and regression tracking. Contributed to a significant app-wide re-architecture of the deal page screens. Advised managers on design and implementation decisions.",
-		"date_start": "2017-04-01",
+		"date_start": "2016-07-25",
 		"date_end": "2020-09-23",
 	}, {
 		"title": "Web developer",
