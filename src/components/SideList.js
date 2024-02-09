@@ -9,6 +9,7 @@ class SideList extends React.Component {
     const {data, listId} = props;
 
     this.state = { title: data.title, id: listId, items: data.items };
+    this.state.itemComponent = SideListItem;
   }
 
   render() {
@@ -20,7 +21,7 @@ class SideList extends React.Component {
     	<h3>{this.state.title}</h3>
     	<ul>
 	    	{this.state.items.map((language, index) => {
-	    		return <SideListItem name={language} key={index} />
+	    		return <this.state.itemComponent name={language} key={index} />
 	    	})}
 	    </ul>
 	</aside>);

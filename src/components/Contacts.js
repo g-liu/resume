@@ -3,6 +3,11 @@ import SideList from './SideList';
 import ContactItem from './ContactItem';
 
 class Contacts extends SideList {
+	constructor(props) {
+		super(props);
+		this.state.itemComponent = ContactItem;
+	}
+	
 	render() {
 		if (!this.state.items || this.state.items.length === 0) { return null; }
 		return (
