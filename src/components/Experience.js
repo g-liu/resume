@@ -13,10 +13,11 @@ const Experience = (props) => {
 				<td className="years">{displayYears}</td>
 				<td className="job-details">
 					<h4>{title}</h4>
-					<span className="company-name"><a href={companyUrl}>{fancyCompanyName}</a></span>,&nbsp;
+					<span className="company-name"><a href={companyUrl}>{fancyCompanyName}</a></span>
+					{fancyLocation && <>,&nbsp;</>}
 					<span className="location">{fancyLocation}</span>
 				
-					{!displayShort && <p>{description}</p>}
+					<p className="description">{description}</p>
 				</td>
 			</tr>
 }

@@ -37,9 +37,9 @@ const resume_data = {
 		items: [{
 			"date_start": "2012-09-26",
 			"date_end": "2016-06-10",
-			"institution": "University of Washington",
-			"location_city": "Seattle WA",
-			"degrees": ["B.S. Computer Science", "Minor in Music"],
+			"institution": "Univ. of Washington",
+			"location_city": "Seattle",
+			"degrees": "B.S. Computer Science; Minor in Music",
 			"achievements": [
 				"Direct admission into Computer Science, 2012",
 				"Dean's List candidate, 2012―16",

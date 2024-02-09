@@ -22,6 +22,7 @@ const Educations = (props) => {
 							degrees={item.degrees}
 							institution={item.institution}
 							locationCity={item.location_city}
+							description={item.description}
 							achievements={item.achievements}
 							key={index} />
 					})}

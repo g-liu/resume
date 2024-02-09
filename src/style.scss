@@ -78,6 +78,10 @@ p, ul, span, code, tt, kbd, td {
 ul.bulleted {
 	padding-left: 2.5em;
 	list-style: initial;
+
+	li {
+		line-height: 1.5;
+	}
 }
 
 #resume-container {
@@ -221,6 +225,10 @@ table {
 
 	tr.previous {
 		color: $light-font-color;
+
+		.description {
+			display: none;
+		}
 	}
 
 	td {
