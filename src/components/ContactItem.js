@@ -51,18 +51,6 @@ function contactIcon(type) {
   }
 }
 
-// function getUrl(data) {
-//   const {id, type} = data;
-
-//   switch (type.toUpperCase()) {
-//   case 'TWITTER': return `https://twitter.com/${id}`;
-//   case 'LINKEDIN': return `https://linkedin.com/in/${id}`;
-//   case 'GITHUB': return `https://github.com/${id}`;
-//   case 'EMAIL': return `mailto:${id}?subject=Contact from resume`;
-//   default: return id;
-//   }
-// }
-
 class ContactItem extends SideListItem {
   render() {
     const icon = contactIcon(this.state.data.type);
