@@ -2,19 +2,22 @@ const resume_data = {
 	"meta": {
 		"name": "Geoffrey Liu",
 		"byline": "Experienced iOS engineer, web developer, and musician",
-		"contacts": [{
-			"type": "email",
-			"id": "main@g-liu.com"
-		}, {
-			"type": "website",
-			"id": "g-liu.com"
-		}, {
-			"type": "linkedin",
-			"id": "geoffliu"
-		}, {
-			"type": "github",
-			"id": "g-liu"
-		}],
+		"contacts": {
+			"title": "Contact info",
+			"items": [{
+				"type": "email",
+				"id": "main@g-liu.com"
+			}, {
+				"type": "website",
+				"id": "g-liu.com"
+			}, {
+				"type": "linkedin",
+				"id": "geoffliu"
+			}, {
+				"type": "github",
+				"id": "g-liu"
+			}],
+		},
 	},
 	"education": {
 		title: "Education",
@@ -32,52 +35,65 @@ const resume_data = {
 			]
 		}],
 	},
-	// "coursework": [
-	//     "Web programming",
-	//     "Data structures",
-	//     "Software engineering",
-	//     "Databases",
-	//     "Systems programming",
-	//     "Graphics",
-	//     "Introduction to HCI",
-	//     "Artificial intelligence",
-	//     "HW/SW interface",
-	//     "Music theory",
-	//     "Music history"
-	// ],
-	"languages": [
-		"Swift / Objective-C",
-	    "JavaScript / ES6",
-	    "React / Angular / Node",
-	    "Java",
-	    "PHP",
-	    "HTML5 / CSS3",
-	    "Ruby on Rails",
-	    "Python",
-	    "C / C++",
-	],
-	"skills": [
-		"Xcode",
-		"Jenkins CI",
-		"Quick/Nimble unit testing",
-		"iOS UI Test automation",
-		"Web testing automation",
-		"JIRA",
-		"NPM / yarn / Cocoapods",
-		"GitHub Enterprise",
-		"Bash/Python scripting",
-		"IntelliJ",
-		"Eclipse",
-		"WordPress"
-	],
-	"interests": [
-    	"UI/UX design",
-    	"Foreign languages",
-    	"Music education",
-    	"Teaching / speaking",
-    	"Photography",
-    	"Architecture / interior design"
-	],
+	// "coursework": {
+	// 	"title": "Coursework",
+	// 	"items": [
+	// 	    "Web programming",
+	// 	    "Data structures",
+	// 	    "Software engineering",
+	// 	    "Databases",
+	// 	    "Systems programming",
+	// 	    "Graphics",
+	// 	    "Introduction to HCI",
+	// 	    "Artificial intelligence",
+	// 	    "HW/SW interface",
+	// 	    "Music theory",
+	// 	    "Music history"
+	// 	],
+	// },
+	"languages": {
+		"title": "Languages",
+		"items": [
+			"Swift / Objective-C",
+		    "JavaScript / ES6",
+		    "React / Angular / Node",
+		    "Java",
+		    "PHP",
+		    "HTML5 / CSS3",
+		    "Ruby on Rails",
+		    "Python",
+		    "C / C++",
+		],
+	},
+	"skills": {
+		"title": "Skills",
+		"items": [
+			"Xcode",
+			"Jenkins CI",
+			"Quick/Nimble unit testing",
+			"iOS UI Test automation",
+			"Web testing automation",
+			"JIRA",
+			"NPM / yarn / Cocoapods",
+			"GitHub Enterprise",
+			"Bash/Python scripting",
+			"IntelliJ",
+			"Eclipse",
+			"WordPress",
+			"Photo/video/audio editing",
+		],
+	},
+	"interests": {
+		"title": "Interests",
+		"items": [
+	    	"UI/UX design",
+	    	"Foreign languages",
+	    	"Music education",
+	    	"Teaching / speaking",
+	    	"Photography",
+	    	"Architecture / interior design"
+		],
+	},
 	"experiences": {
 		"title": "Professional experience",
 		"items": [{

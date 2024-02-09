@@ -39,10 +39,10 @@ const Resume = (props) => {
   return (<div id="main">
       <Header data={resumeData.meta} />
       <div id="left">
-        <Contacts items={resumeData.meta.contacts} />
-        <SideList listId="languages" title="Languages" items={resumeData.languages} />
-        <SideList listId="skills" title="Skills" items={resumeData.skills} />
-        <SideList listId="interests" title="Interests" items={resumeData.interests} />
+        <Contacts listId="contacts" data={resumeData.meta.contacts} />
+        <SideList listId="languages" data={resumeData.languages} />
+        <SideList listId="skills" data={resumeData.skills} />
+        <SideList listId="interests" data={resumeData.interests} />
         <Plug data={resumeData.plug} />
       </div>
       <div id="right">

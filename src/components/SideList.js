@@ -5,13 +5,17 @@ import SideListItem from './SideListItem';
 class SideList extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { title: props.title, id: props.listId, items: props.items };
+
+    const {data, listId} = props;
+
+    this.state = { title: data.title, id: listId, items: data.items };
   }
 
   render() {
   	if (!this.state.items || this.state.items.length === 0) {
   		return null;
   	}
+
     return (<aside id={this.state.id}>
     	<h3>{this.state.title}</h3>
     	<ul>
