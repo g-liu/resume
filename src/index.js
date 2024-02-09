@@ -34,16 +34,16 @@ export default function App() {
 }
 
 const Resume = (props) => {
-  if (!resumeData) { return null; }
+  if (!resumeData || !resumeData.meta) { return <p id="start-warning">Edit the file <code>src/resume_data.js</code> to get started!</p>; }
 
   return (<div id="main">
-      <Header name={resumeData.meta.name} byline={resumeData.meta.byline} />
+      <Header data={resumeData.meta} />
       <div id="left">
         <Contacts items={resumeData.meta.contacts} />
         <SideList listId="languages" title="Languages" items={resumeData.languages} />
         <SideList listId="skills" title="Skills" items={resumeData.skills} />
         <SideList listId="interests" title="Interests" items={resumeData.interests} />
-        <Plug content={resumeData.plug.content} />
+        <Plug data={resumeData.plug} />
       </div>
       <div id="right">
         <Experiences experiences={resumeData.experiences} />
@@ -55,7 +55,7 @@ const Resume = (props) => {
 
 const CoverLetter = (props) => {
   return (<div id="main">
-      <Header name={resumeData.meta.name} byline={resumeData.meta.byline} />
+      <Header data={resumeData.meta} />
       <div id="letter-content">
         
       </div>

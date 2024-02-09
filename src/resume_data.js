@@ -14,7 +14,7 @@ const resume_data = {
 		}, {
 			"type": "github",
 			"id": "g-liu"
-		}]
+		}],
 	},
 	"education": {
 		title: "Education",

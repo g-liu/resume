@@ -4,6 +4,8 @@ import Education from './Education';
 const Educations = (props) => {
 	const {educations} = props;
 
+	if (!educations) { return null; }
+
 	const {items, title} = educations;
 	
 	if (!items || items.length === 0) { return null; }

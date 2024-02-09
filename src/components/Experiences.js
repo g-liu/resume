@@ -4,6 +4,8 @@ import Experience from './Experience';
 const Experiences = (props) => {
 	const {experiences} = props;
 
+	if (!experiences) { return null; }
+
 	const {items, title} = experiences
 	
 	if (!items || items.length === 0) { return null; }

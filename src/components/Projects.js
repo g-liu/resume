@@ -3,6 +3,9 @@ import Project from './Project';
 
 const Projects = (props) => {
 	const {projects} = props;
+
+	if (!projects) { return null; }
+
 	const {items, heading, display_short} = projects
 
 	if (!items || items.length === 0) {

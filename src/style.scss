@@ -13,7 +13,7 @@ body {
 
 header {
 	background-color: #3a3a3a;
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid #555;
 	padding: 0.666in 0.5in 0.1875in;
 	grid-column-start: 1;
 	grid-column-end: 3;
@@ -43,6 +43,7 @@ header {
 		margin-top: 0.166em;
 		font-weight: normal;
 		font-size: 18px;
+		opacity: 83.3333%;
 	}
 }
 
@@ -52,7 +53,6 @@ h3 {
 }
 aside h3 {
 	font-size: 18px;
-	margin-bottom: 0.25em;
 }
 
 a {
@@ -175,7 +175,7 @@ span {
 	}
 
 	&.location {
-		color: #444;
+		color: #555;
 	}
 }
 
@@ -295,4 +295,10 @@ table ul {
 aside p,
 section p {
 	margin-top: 0;
+}
+
+#start-warning, #start-warning * {
+	font-size: 48px;
+	color: red;
+	text-align: center;
 }

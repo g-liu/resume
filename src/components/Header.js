@@ -2,7 +2,11 @@ import React from 'react';
 import {LastModifiedDate} from './helpers';
 
 const Header = (props) => {
-	const {name, byline} = props;
+	const {data} = props;
+
+	if (!data) { return null; }
+
+	const {name, byline} = data;
 
 	return (
 		<header>
