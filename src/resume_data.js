@@ -189,7 +189,7 @@ const resume_data = {
 			"display_short": true,
 			"is_shown": false,
 		}, {
-			"title": "Programming Intern",
+			"title": "Programming intern",
 			"company": "Seattle Publishing",
 			"company_url": "https://seattlepublishing.org",
 			"location": "Seattle WA",
