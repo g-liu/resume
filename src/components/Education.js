@@ -4,6 +4,8 @@ import {displayDate, fancifyNoun} from './helpers';
 const Education = (props) => {
 	const {startDate, endDate, degrees, institution, locationCity, description, achievements} = props;
 
+	const achievementsList = achievements.items;
+
 	const displayYears = displayDate(startDate, endDate, false);
 	const fancyInstitutionName = fancifyNoun(institution);
 
@@ -15,15 +17,30 @@ const Education = (props) => {
 
 					{description && <p className="description">{description}</p>}
 
-					{achievements && achievements.length > 0 ?
-						<ul className="bulleted">
-							{achievements.map((achievement, index) => {
-								return <li key={index}>{achievement}</li>
+					{achievementsList && achievementsList.length > 0 ?
+						<ul className="bulleted achievements">
+							{achievementsList.map((achievement, index) => {
+								return <Achievement key={index} data={achievement} />
 							})}
 						</ul>
 					 : null}
 				</td>
 			</tr>;
+}
+
+const Achievement = (props) => {
+	const {data} = props;
+
+	if (!data) return null;
+
+	const {title, year} = data;
+
+	if (!title) return null;
+
+	return (<li>
+			<span>{title}</span>
+			{year && <>,&nbsp;<span className="year">{year}</span></>}
+		</li>);
 }
 
 export default Education;

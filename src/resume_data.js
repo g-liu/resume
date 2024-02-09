@@ -40,12 +40,29 @@ const resume_data = {
 			"institution": "Univ. of Washington",
 			"location_city": "Seattle",
 			"degrees": "B.S. Computer Science; Minor in Music",
-			"achievements": [
-				"Direct admission into Computer Science, 2012",
-				"Dean's List candidate, 2012―16",
-				"Teaching assistant 2014―16; musician in UW Symphony 2012―16",
-				"3.73 overall cumulative GPA",
-			]
+			"achievements": {
+				"items": [{
+					"title": "Direct admission into Computer Science",
+					"year": "2012",
+				},/* {
+					"title": "School of Music scholarship recipient",
+					"year": "2012―14",
+				}, */{
+					"title": "Dean's List candidate",
+					"year": "2012―16",
+				}, {
+					"title": "CSE undergraduate teaching assistant",
+					"year": "2014―16",
+				}, /*{
+					"title": "Violinist / keyboardist in UW Symphony",
+					"year": "2012―16",
+				},*/ {
+					"title": "Webmaster, ASUW (student government)",
+					"year": "2013―14",
+				}, {
+					"title": "3.73 overall cumulative GPA",
+				}]
+			},
 		}],
 	},
 	// "coursework": {
@@ -160,6 +177,7 @@ const resume_data = {
 			"date_end": "2016-06-10",
 			"description": "Prepare for and teach sections of 15-25 students, grade homework assignments and exams, and hold office hours for students.",
 			"display_short": true,
+			"is_shown": false,
 		}, {
 			"title": "Webmaster",
 			"company": "Associated Students of the University of Washington",
@@ -169,6 +187,7 @@ const resume_data = {
 			"date_end": "2014-06-01",
 			"description": "Maintain and develop web projects for the ASUW",
 			"display_short": true,
+			"is_shown": false,
 		}, {
 			"title": "Programming Intern",
 			"company": "Seattle Publishing",
@@ -178,11 +197,11 @@ const resume_data = {
 			"date_end": "2013-09-01",
 			"description": "Ruby on Rails migration and website redesign",
 			"display_short": true,
-			"is_shown": false,
+			"is_shown": true,
 		}, {
 			"title": "Freelance web developer",
 			"company": "Self-employed",
-			"location": "Seattle WA",
+			// "location": "Seattle WA",
 			"date_start": "2010-01-01",
 			"date_end": null,
 			"display_short": true,

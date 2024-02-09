@@ -78,10 +78,6 @@ p, ul, span, code, tt, kbd, td {
 ul.bulleted {
 	padding-left: 2.5em;
 	list-style: initial;
-
-	li {
-		line-height: 1.5;
-	}
 }
 
 #resume-container {
@@ -236,6 +232,19 @@ table {
 	}
 
 	p { margin: 0; }
+}
+
+#education {
+	.achievements {
+		li {
+			line-height: 1.5;
+
+			.year {
+				color: $light-font-color;
+				font-style: italic;
+			}
+		}
+	}
 }
 
 #projects {

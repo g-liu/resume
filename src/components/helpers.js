@@ -73,7 +73,7 @@ class LastModifiedDate extends React.Component {
 
 /* makes fancy the "OF" and "AND" words of a proper noun, also any mention of remote, to be greyed */
 function fancifyNoun(noun) {
-	if (noun === null || noun.length === 0) { return noun; }
+	if (noun == null || noun.length === 0) { return noun; }
 
 	return noun.split(' ').map((token, index, tokens) => {
 		const isLastToken = index === tokens.length - 1;
