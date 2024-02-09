@@ -12,19 +12,39 @@ class SideList extends React.Component {
     this.state.itemComponent = SideListItem;
   }
 
+  Title = () => {
+    return <h3>{this.state.title}</h3>
+  }
+
+  ListHeader = () => {
+    // override this in subclasses if one wishes to have a list header
+    return null;
+  }
+
+  ListFooter = () => {
+    // override this in subclasses if one wishes to have a list footer
+    return null;
+  }
+
+  List = () => {
+    return (<ul>
+        {this.state.items.map((item, index) => {
+          return <this.state.itemComponent data={item} key={index} />
+        })}
+    </ul>);
+  }
+
   render() {
   	if (!this.state.items || this.state.items.length === 0) {
   		return null;
   	}
 
     return (<aside id={this.state.id}>
-    	<h3>{this.state.title}</h3>
-    	<ul>
-	    	{this.state.items.map((item, index) => {
-	    		return <this.state.itemComponent data={item} key={index} />
-	    	})}
-	    </ul>
-	</aside>);
+      	<this.Title />
+        <this.ListHeader />
+      	<this.List />
+        <this.ListFooter />
+      </aside>);
   }
 }
 
