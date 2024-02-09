@@ -14,43 +14,68 @@ function contactIcon(type) {
       return 'fa fa-envelope-o';
     case 'LINKEDIN':
       return 'fa fa-linkedin';
+    case 'YOUTUBE':
+      return 'fa fa-youtube-play';
+    case 'FLICKR':
+      return 'fa fa-flickr';
+    case 'BEHANCE':
+      return 'fa fa-behance-square';
+    case 'DRIBBBLE':
+      return 'fa fa-dribbble';
+    case 'INSTAGRAM':
+      return 'fa fa-instagram';
+    case 'CODEPEN':
+      return 'fa fa-codepen';
+    case 'DEVIANTART':
+      return 'fa fa-deviantart';
+    case 'FACEBOOK':
+      return 'fa fa-facebook-square';
+    case 'SKYPE':
+      return 'fa fa-skype';
+    case 'PHONE':
+      return 'fa fa-phone';
+    case 'ODNOKLASSNIKI':
+      return 'fa fa-odnoklassniki-square';
+    case 'PINTEREST':
+      return 'fa fa-pinterest-square';
+    case 'REDDIT':
+      return 'fa fa-reddit';
+    case 'VIMEO':
+      return 'fa fa-vimeo-square';
+    case 'WHATSAPP':
+      return 'fa fa-whatsapp';
+    case 'SOUNDCLOUD':
+      return 'fa fa-soundcloud';
     default:
       return null;
   }
 }
 
-function displayName(name, type) {
-  switch (type.toUpperCase()) {
-    case 'TWITTER':
-      return <span>
-          Twitter: <a href={`https://twitter.com/${name}`}>@{name}</a>
-        </span>;
-    case 'LINKEDIN':
-      return <span>
-          LinkedIn: <a href={`https://linkedin.com/in/${name}`}>/{name}</a>
-        </span>;
-    case 'WEBSITE':
-      return <a href={`https://${name}`}>https://{name}</a>;
-    case 'GITHUB':
-      return <span>
-          GitHub: <a href={`https://github.com/${name}`}>{name}</a>
-        </span>;
-    case 'EMAIL':
-      return <a href={`mailto:${name}`}>{name}</a>;
-    default:
-      return name;
-  }
-}
+// function getUrl(data) {
+//   const {id, type} = data;
+
+//   switch (type.toUpperCase()) {
+//   case 'TWITTER': return `https://twitter.com/${id}`;
+//   case 'LINKEDIN': return `https://linkedin.com/in/${id}`;
+//   case 'GITHUB': return `https://github.com/${id}`;
+//   case 'EMAIL': return `mailto:${id}?subject=Contact from resume`;
+//   default: return id;
+//   }
+// }
 
 class ContactItem extends SideListItem {
   render() {
     const icon = contactIcon(this.state.data.type);
-    const name = displayName(this.state.data.id, this.state.data.type);
+    const url = this.state.data.url;
+    const prefix = this.state.data.prefix;
+    const displayName = this.state.data.display_name;
+
+    if (!url || !displayName) return null;
 
     return (<li>
-        {name}
-        {'\u00A0'}
-        <span className={icon}></span>
+        {prefix ? `${prefix}:\u00A0` : ""}
+        {url ? <a href={url} target="_BLANK" rel="noopener noreferrer">{displayName}</a> : ''}
+        {icon ? <>&nbsp;<span className={icon}></span></> : ''}
       </li>
     );
   }

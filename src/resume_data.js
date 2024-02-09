@@ -5,17 +5,30 @@ const resume_data = {
 		"contacts": {
 			"title": "Contact info",
 			"items": [{
+				"prefix": null,
 				"type": "email",
-				"id": "main@g-liu.com"
-			}, {
+				"display_name": "main@g-liu.com",
+				"url": "mailto:main@g-liu.com&subject=Contact from Geoffrey Liu's resume",
+			}, /*{
+				"prefix": null,
 				"type": "website",
-				"id": "g-liu.com"
-			}, {
+				"display_name": "g-liu.com",
+				"url": "https://g-liu.com",
+			},*/ {
+				"prefix": "LinkedIn",
 				"type": "linkedin",
-				"id": "geoffliu"
+				"display_name": "geoffliu",
+				"url": "https://linkedin.com/in/geoffliu"
 			}, {
+				"prefix": "GitHub",
 				"type": "github",
-				"id": "g-liu"
+				"display_name": "g-liu",
+				"url": "https://github.com/g-liu"
+			}, {
+				"prefix": "YouTube",
+				"type": "youtube",
+				"display_name": "@gliu",
+				"url": "https://youtube.com/@gliu",
 			}],
 		},
 	},
