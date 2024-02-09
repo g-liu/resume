@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&display=swap');
 
+$light-font-color: #555;
+$disabled-font-color: #999;
+$inverse-font-color: white;
+$link-color: #910;
+
 html, body {
 	margin: 0;
 	font-family: 'Libre Baskerville', serif;
@@ -12,8 +17,8 @@ body {
 }
 
 header {
-	background-color: #3a3a3a;
-	border-bottom: 1px solid #333;
+	background-color: #333;
+	border-bottom: 1px solid $light-font-color;
 	padding: 0.666in 0.5in 0.1875in;
 	grid-column-start: 1;
 	grid-column-end: 3;
@@ -24,7 +29,7 @@ header {
 	.last-modified {
 		position: absolute;
 	    font-size: x-small;
-	    color: white;
+	    color: $inverse-font-color;
 	    opacity: 25%;
 	    right: 0.25in;
 	    top: 0.25in;
@@ -32,7 +37,7 @@ header {
 
 	h1,
 	h2 {
-		color: white;
+		color: $inverse-font-color;
 		margin: 0;
 		text-align: center;
 	}
@@ -43,6 +48,7 @@ header {
 		margin-top: 0.166em;
 		font-weight: normal;
 		font-size: 18px;
+		opacity: 83.3333%;
 	}
 }
 
@@ -52,11 +58,10 @@ h3 {
 }
 aside h3 {
 	font-size: 18px;
-	margin-bottom: 0.25em;
 }
 
 a {
-	color: #910;
+	color: $link-color;
 }
 
 h4 {
@@ -155,7 +160,7 @@ span {
 
 	&.sm {
 		font-size: x-small;
-		color: #999;
+		color: $disabled-font-color;
 	}
 
 	&.fa {
@@ -166,7 +171,7 @@ span {
 
 	&.in-progress {
 		font-style: italic;
-		color: #999;
+		color: $light-font-color;
 	}
 
 	&.company-name {
@@ -175,7 +180,7 @@ span {
 	}
 
 	&.location {
-		color: #444;
+		color: $light-font-color;
 	}
 }
 
@@ -190,7 +195,7 @@ table {
 		vertical-align: top;
 
 		.date-modifier {
-			color: #555;
+			color: $light-font-color;
 		}
 		
 		.months {
@@ -215,7 +220,11 @@ table {
 	}
 
 	tr.previous {
-		color: #555;
+		color: $light-font-color;
+
+		.description {
+			display: none;
+		}
 	}
 
 	td {
@@ -225,11 +234,24 @@ table {
 	p { margin: 0; }
 }
 
+#education {
+	.achievements {
+		li {
+			line-height: 1.5;
+
+			.year {
+				color: $light-font-color;
+				font-style: italic;
+			}
+		}
+	}
+}
+
 #projects {
 	.technologies {
 		display: inline;
-		padding: 0em;
-		color: #555;
+		padding: 0;
+		color: $light-font-color;
 
 		li {
 			display: inline;
@@ -295,4 +317,10 @@ table ul {
 aside p,
 section p {
 	margin-top: 0;
+}
+
+#start-warning, #start-warning * {
+	font-size: 48px;
+	color: red;
+	text-align: center;
 }

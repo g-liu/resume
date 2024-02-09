@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Plug = (props) => {
-	const {content} = props;
+	const {data} = props;
+
+	if (!data) { return null; }
+
+	const {content} = data;
 
 	if (!content || content.length === 0) { return null; }
 

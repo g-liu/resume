@@ -4,6 +4,8 @@ import Education from './Education';
 const Educations = (props) => {
 	const {educations} = props;
 
+	if (!educations) { return null; }
+
 	const {items, title} = educations;
 	
 	if (!items || items.length === 0) { return null; }
@@ -20,6 +22,7 @@ const Educations = (props) => {
 							degrees={item.degrees}
 							institution={item.institution}
 							locationCity={item.location_city}
+							description={item.description}
 							achievements={item.achievements}
 							key={index} />
 					})}
