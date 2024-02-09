@@ -43,14 +43,9 @@ function displayName(name, type) {
 }
 
 class ContactItem extends SideListItem {
-  constructor(props) {
-    super(props);
-    this.state.type = props.type;
-  }
-
   render() {
-    const icon = contactIcon(this.state.type);
-    const name = displayName(this.state.name, this.state.type);
+    const icon = contactIcon(this.state.data.type);
+    const name = displayName(this.state.data.id, this.state.data.type);
 
     return (<li>
         {name}

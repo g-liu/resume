@@ -20,8 +20,8 @@ class SideList extends React.Component {
     return (<aside id={this.state.id}>
     	<h3>{this.state.title}</h3>
     	<ul>
-	    	{this.state.items.map((language, index) => {
-	    		return <this.state.itemComponent name={language} key={index} />
+	    	{this.state.items.map((item, index) => {
+	    		return <this.state.itemComponent data={item} key={index} />
 	    	})}
 	    </ul>
 	</aside>);

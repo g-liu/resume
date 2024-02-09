@@ -3,11 +3,11 @@ import React from 'react';
 class SideListItem extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { name: props.name };
+    this.state = { data: props.data };
   }
 
   render() {
-    return (<li>{this.state.name}</li>);
+    return (<li>{this.state.data}</li>);
   }
 }
 
