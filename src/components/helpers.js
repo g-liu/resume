@@ -63,7 +63,7 @@ function areDatesInSameCentury(date1, date2) {
 
 class LastModifiedDate extends React.Component {
   render() {
-    const formattedDate = moment().format('MMM. YYYY');
+    const formattedDate = moment().format('MMM YYYY');
 
     return (
       <div className="last-modified">Last updated {formattedDate}</div>
