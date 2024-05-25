@@ -59,9 +59,9 @@ const resume_data = {
 				},*/ {
 					"title": "Webmaster, ASUW (student government)",
 					"year": "2013―14",
-				}, {
+				}/*, {
 					"title": "3.73 overall cumulative GPA",
-				}]
+				}*/]
 			},
 		}],
 	},
@@ -128,19 +128,27 @@ const resume_data = {
 	"experiences": {
 		"title": "Professional experience",
 		"items": [{
+			"title": "iOS developer",
+			"company": "Freelance",
+			// "location": "Seattle WA",
+			"description": "App development and project management for a client's iOS app that interacts with a haptic device. Project is under NDA. Technologies leveraged include SwiftUI, external DSP library, custom UI controls, and Bluetooth. Set up automation for external users to test the app.",
+			"date_start": "2024-03-01",
+			"date_end": null
+		}, {
 			"title": "Senior software engineer",
 			"company": "PayPal",
 			"company_url": "https://paypal.com",
 			"location": "Seattle WA (remote)",
-			"description": "Constantly developed new user-facing experiences across the PayPal iOS app in Loyalty, Rewards, and Shopping; as well as addressing technical debt, release, and on-call needs. Contributed to a major redesign of the app in late 2023, ensuring quality of code through code reviews, unit, UI, regression, and snapshot testing; and daily collaboration with QA, managers, design, and product teams. Hosted knowledge sharing sessions through the organization to encourage other teams to adopt best practices in software development.",
+			"description": "Developed new user-facing experiences across the PayPal iOS app in Loyalty, Rewards, and Shopping; as well as addressing technical debt, release, and on-call needs. Contributed to a major redesign of the app in late 2023, ensuring quality of code through code reviews, unit, UI, regression, and snapshot testing; and daily collaboration with QA, managers, design, and product teams. Hosted knowledge sharing sessions through the organization to encourage other teams to adopt best practices in software development.",
 			"date_start": "2020-10-05",
 			"date_end": "2024-01-30",
 		}, {
-			"title": "Violin/viola instructor",
+			"title": "Music instructor and pianist",
 			"company": "The Key to Change",
 			"company_url": "https://keytochangestudio.org",
 			"location": "Renton WA",
-			"description": "Provide instruction to group classes and individual students in a socioeconomically diverse music studio. Write lesson plans, classroom expectations, and student progress reports for each trimester. Accompany students on piano for events, festivals, and recitals. Address technical needs when necessary.",
+			"description": "Provide violin and viola instruction to group classes and individual students in a socioeconomically diverse music studio. Topics taught include history, theory, ear training, technique, and chamber music.",
+			//  Write lesson plans, classroom expectations, and student progress reports for each trimester. Accompany students on piano for events, festivals, and recitals. Address technical needs when necessary.",
 			"date_start": "2020-09-01",
 			"date_end": null,
 		}, {
@@ -148,7 +156,7 @@ const resume_data = {
 			"company": "Groupon",
 			"company_url": "https://groupon.com",
 			"location": "Santa Clara CA & Seattle WA",
-			"description": "Owned the development of over 25+ features in the Groupon iOS app and Groupon Goods web presence, supporting key business goals such as Groupon+ and Groupon Select. Wrote extensive unit test and UI automation suites for stability and regression tracking. Contributed to a significant app-wide re-architecture of the deal page screens. Advised managers on design and implementation decisions.",
+			"description": "Owned the development of over 25+ features in the Groupon iOS app and Groupon Goods web presence, supporting key business goals such as Groupon+ and Groupon Select. Wrote extensive unit test and UI automation suites for stability and regression tracking. Contributed to a significant app-wide re-architecture of the deal page screens.", // Advised managers on design and implementation decisions.",
 			"date_start": "2016-07-25",
 			"date_end": "2020-09-23",
 		}, {
