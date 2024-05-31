@@ -284,8 +284,23 @@ table {
 	&.long {
 		.project {
 			// display: grid;
-			// grid-template-columns: 1fr 1fr;
-			// grid-column-gap: 0.5em;
+			// grid-template-colums: 1fr 1fr;
+			// grid-column-gap: 1em;
+			margin-bottom: 0.5em;
+
+			h2, h3, h4, h5, h6 {
+				display: inline;
+
+				&:after {
+					content: '\00a0\00a0';
+					color: #555;
+				}
+			}
+
+			p {
+				display: inline;
+				line-height: 1.4;
+			}
 
 			.technologies {
 				display: none;
