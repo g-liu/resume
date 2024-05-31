@@ -1,0 +1,3 @@
+[submodule "src/resume_data"]
+	path = src/resume_data
+	url = git@github.com:g-liu/resume_data.git
