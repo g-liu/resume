@@ -9,7 +9,7 @@ import Projects from './components/Projects'
 import Plug from './components/Plug'
 import 'normalize.css/normalize.css';
 import './style.scss';
-import resumeData from './resume_data';
+import resumeData from './resume_data/data';
 
 import {
   BrowserRouter as Router,
