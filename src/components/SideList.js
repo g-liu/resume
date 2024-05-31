@@ -1,5 +1,6 @@
 import React from 'react';
 import SideListItem from './SideListItem';
+import SideListItemDetailed from './SideListItemDetailed';
 
 /* Generic top level class for a general list */
 class SideList extends React.Component {
@@ -9,7 +10,14 @@ class SideList extends React.Component {
     const {data, listId} = props;
 
     this.state = { title: data.title, id: listId, items: data.items };
-    this.state.itemComponent = SideListItem;
+    switch (data.listType) {
+      case "detailed": 
+        this.state.itemComponent = SideListItemDetailed;
+        break;
+      default:
+        this.state.itemComponent = SideListItem;
+        break;
+    }
   }
 
   Title = () => {
