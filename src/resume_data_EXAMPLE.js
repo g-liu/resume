@@ -3,15 +3,15 @@
 
 const resume_data = {
 	"meta": {
-		"name": "Joe Q. Public",
+		"name": "John Q. Public",
 		"byline": "Person with a job",
 		"contacts": {
 			"title": "Contact info",
 			"items": [{
 				"prefix": null,
 				"type": "email",
-				"display_name": "joe@example.com",
-				"url": "mailto:joe@example.com&subject=Contact from Joe Public's resume",
+				"display_name": "john@example.com",
+				"url": "mailto:john@example.com&subject=Contact from John Public's resume",
 			}, {
 				"prefix": null,
 				"type": "phone",
@@ -25,18 +25,18 @@ const resume_data = {
 			},*/ {
 				"prefix": "LinkedIn",
 				"type": "linkedin",
-				"display_name": "joepublic",
-				"url": "https://linkedin.com/in/joepublic"
+				"display_name": "johnpublic",
+				"url": "https://linkedin.com/in/johnpublic"
 			}, {
 				"prefix": "GitHub",
 				"type": "github",
-				"display_name": "joepublic",
-				"url": "https://github.com/joepublic"
+				"display_name": "johnpublic",
+				"url": "https://github.com/johnpublic"
 			}/*, {
 				"prefix": "YouTube",
 				"type": "youtube",
-				"display_name": "@joepublic",
-				"url": "https://youtube.com/@joepublic",
+				"display_name": "@johnpublic",
+				"url": "https://youtube.com/@johnpublic",
 			}*/],
 		},
 	},
