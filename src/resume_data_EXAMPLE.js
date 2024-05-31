@@ -1,5 +1,5 @@
 // Instructions:
-// Copy me into resume_data.js and change the data for your needs.
+// Copy me into resume_data/data.js and change the data for your needs.
 
 const resume_data = {
 	"meta": {
