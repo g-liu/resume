@@ -283,9 +283,9 @@ table {
 
 	&.long {
 		.project {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-column-gap: 0.5em;
+			// display: grid;
+			// grid-template-columns: 1fr 1fr;
+			// grid-column-gap: 0.5em;
 
 			.technologies {
 				display: none;
