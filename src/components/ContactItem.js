@@ -46,6 +46,8 @@ function contactIcon(type) {
       return 'fa fa-whatsapp';
     case 'SOUNDCLOUD':
       return 'fa fa-soundcloud';
+    case 'ADDRESS':
+      return 'fa fa-home';
     default:
       return null;
   }
@@ -58,11 +60,11 @@ class ContactItem extends SideListItem {
     const prefix = this.state.data.prefix;
     const displayName = this.state.data.display_name;
 
-    if (!url || !displayName) return null;
+    if (!displayName) return null;
 
     return (<li>
         {prefix ? `${prefix}:\u00A0` : ""}
-        {url ? <a href={url} target="_BLANK" rel="noopener noreferrer">{displayName}</a> : ''}
+        {url ? <a href={url} target="_BLANK" rel="noopener noreferrer">{displayName}</a> : displayName}
         {icon ? <>&nbsp;<span className={icon}></span></> : ''}
       </li>
     );
