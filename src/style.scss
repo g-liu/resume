@@ -19,7 +19,7 @@ body {
 header {
 	background-color: #333;
 	border-bottom: 1px solid $light-font-color;
-	padding: 0.666in 0.5in 0.1875in;
+	padding: 0.5in 0.5in 0.125in;
 	grid-column-start: 1;
 	grid-column-end: 3;
 	grid-row-start: 1;
@@ -111,7 +111,7 @@ ul.bulleted {
 	height: 100%;
 	grid-gap: 0;
 	grid-template-columns: 11fr 29fr;
-	grid-template-rows: 1.6in auto;
+	grid-template-rows: 1.5in auto;
 }
 
 #letter-content {
